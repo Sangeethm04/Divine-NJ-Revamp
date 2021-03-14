@@ -53,7 +53,7 @@ input[type=submit]:hover {
 </div> 
 
 <div>
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
       
@@ -66,6 +66,7 @@ input[type=submit]:hover {
           <option value="canada">Canada</option>
           <option value="usa">USA</option>
         </select>
+        <div data-netlify-recaptcha="true"></div>
           <button type="submit">Send</button>
         </p>
       </form>  
