@@ -1,4 +1,4 @@
-var slideIndex = 0;
+/*var slideIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -15,18 +15,5 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
-
-
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("topnav").style.top = "0";
-  } else {
-    document.getElementById("topnav").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+  setTimeout(showSlides, 1000); // Change image every 2 seconds
+}*/
