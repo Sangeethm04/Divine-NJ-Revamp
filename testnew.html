@@ -27,14 +27,37 @@
           transform: translate(15%);
           
         }
+
+        .column1 {
+          float: left;
+          width: 45%;
+          padding: 5px 25px;
+          border-radius: 8px;
+          transform: translate(15%);
+        }
         
         /* Remove extra left and right margins, due to padding */
         .row {margin: 0 -5px;}
 
-        
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
         /* Responsive columns */
         @media screen and (max-width: 600px) {
           .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            transform: translate(0);
+          }
+        }
+
+        @media screen and (max-width: 600px) {
+          .column1 {
             width: 100%;
             display: block;
             margin-bottom: 20px;
@@ -51,509 +74,6 @@
           border-radius: 8px;
         }
 
-        .cardmove {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -125px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove2 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -108px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove2 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove3 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -122px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove3 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove4 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -153px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove4 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove5 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -240px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove5 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove6 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -200px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove6 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove7 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -235px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove7 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove8 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -218px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove8 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove9 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -270px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove9 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove10 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -285px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove10 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove11 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -265px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove11 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove12 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -279px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove12 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove13 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -292px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove13 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove14 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -272px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove14 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove15 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -252px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove15 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove16 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -230px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove16 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove17 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -265px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove17 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove18 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -225px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove18 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove19 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -205px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove19 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove20 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -187px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove20 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove21 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -265px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove21 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove22 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -265px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove22 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove23 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -265px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove23 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
-
-        .cardmove11 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: -265px;
-        }
-
-                /* Responsive columns */
-                @media screen and (max-width: 600px) {
-          .cardmove11 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          padding: 16px;
-          text-align: center;
-          background-color: #f1f1f1;
-          border-radius: 8px;
-          margin-top: 0px;
-          }
-        }
 
 
         h3 {
@@ -588,7 +108,7 @@
 </div>
 
 <div class="row">
-    <div class="column">
+    <div class="column1">
       <div class="card">
         <h3>Healing of a Blood Disorder</h3>
         <p style="line-height: 1.2;">9 yrs. ago, my husband was diagnosed with a rare blood disease. It was a fatal disease. In JAN. he went to the doctor and the condition got worse. He had to see the doctor more often and was kind of getting close to the final stage. We came here and prayed. Twice the Priest gave a message at different prayer sessions regarding a healing the Lord was granting to someone with a blood disease. On our 3rd visit, I prayed to Jesus to give a sign if this healing is for my husband. And the Priest gave the message again. My husband then went to the doctor and the tests were done in MAY. Contrary to the result in JAN., everything went down, the result got better with no treatment. Who could do that? Only GOD. Thank you Jesus.
@@ -610,8 +130,8 @@
       </div>
     </div>
     
-    <div class="column">
-      <div class="cardmove">
+    <div class="column1">
+      <div class="card">
         <h3>Blessed with a full time Job</h3>
         <p>I attended a 3-day Live-in Retreat and went back home. The very next day I recieved the good news that I have been blessed with a full-time job.<br> ---Manju Joseph, NY<p>
       </div>
@@ -624,8 +144,8 @@
         </div>
       </div>
 
-      <div class="column">
-        <div class="cardmove">
+      <div class="column1">
+        <div class="card">
           <h3>Freedom from Bedwetting</h3>
           <p>My son Albin Santhosh(8yr old) is completely healed & free from bedwetting(even with pullups). We were blessed with a new house. My husband recieved healing from the stomach ulcer.<br> ---Jijimol Santhosh, NJ</p>
         </div>
@@ -639,13 +159,13 @@
       </div>
 
       <div class="column">
-        <div class="cardmove2">
+        <div class="card">
           <h3>Good confession and Healings</h3>
           <p>Felt so relieved after confession. Recieved a better eye-sight. No more numbness in the arm.<br> ---Susy Jacob, PA</p>
         </div>
       </div>
 
-      <div class="column">
+      <div class="column1">
         <div class="card">
           <h3>Relief from years of knee pain</h3>
           <p>For 5 years, I was suffering from pain in both of my knees. sought several treatments, physical therapy, chiropractor, medication etc. but nothing helped. My Lord Jesus healed me completely. <br>---Candice Newnes, CA.</p>
@@ -653,7 +173,7 @@
       </div>
 
       <div class="column">
-        <div class="cardmove3">
+        <div class="card">
           <h3>Skin Restored</h3>
           <p>I thank God for the healing of a skin condition.<br> ---Zenaida Macedo</p>
           <p></p>
@@ -667,8 +187,8 @@
         </div>
       </div>
 
-      <div class="column">
-        <div class="cardmove4">
+      <div class="column1">
+        <div class="card">
           <h3>It's like HEAVEN here at Divine</h3>
           <p>Learnt a lot about God. The Lord gave me peace and love to share with others. He healed my back pain. Glad I came here, it's like being in heaven, I really hope more people can come and find out how great it is.<br>-- Elizabeth Arteaga, Oakhurst NJ</p>
         </div>
@@ -681,8 +201,8 @@
         </div>
       </div>
 
-      <div class="column">
-        <div class="cardmove4">
+      <div class="column1">
+        <div class="card">
           <h3>Holy Spirit spoke to me</h3>
           <p>I was very restless when I arrived here. But now I'm at peace. Many messages that were meant for me. Sought guidance in many ways for so many years. Holy Spirit spoke through the Retreat Directors and I got all the answers.    <br>-Deacon Bosco D'couto, Richmond Hill</p>
         </div>
@@ -695,8 +215,8 @@
         </div>
       </div>
 
-      <div class="column">
-        <div class="cardmove5">
+      <div class="column1">
+        <div class="card">
           <h3>
             Mammogram Test-Clear & Biopsy report-Good</h3>
           <p>During my previous retreat, I was very worried as I was told my mammogram test was not very clear. I had to do additional tests and then had to get a biopsy done. The biopsy test went well and Praise God the report was good <br>--Susan Fernandes, Harrisburg, PA.</p>
@@ -710,8 +230,8 @@
         </div>
       </div>
 
-      <div class="column">
-        <div class="cardmove5">
+      <div class="column1">
+        <div class="card">
           <h3>Healing of the Back after 9 years & Deep Divine Experience</h3>
           <p>Had a good confession. I had back pain for almost 9 years (after kneeling and getting up from the ground) I use to get back pain for hours. I never got the pain when I prayed kneeling and lying on the floor on Saturday. It is completely gone. Jesus healed me completely. Thank you Lord. On the last day of the Retreat, I was able to attend the Holy Mass without getting distracted. I had a very holy experience during that time. It felt like I was standing on fire the whole time. <br>Amala Jose, NJ</p>
         </div>
@@ -725,13 +245,13 @@
       </div>
 
       <div class="column">
-        <div class="cardmove6">
+        <div class="card">
           <h3>Best Confession Ever & Ulcers healed</h3>
           <p>I'd a wonderful experience at the retreat center. This is the first time in my life I had a great confession and as a result God heals me from stomach ulcers and I felt peace from a lot of wound in my life. Praise God.<br>  Edeline COQ, West Orange, NJ</p>
         </div>
       </div>
 
-      <div class="column">
+      <div class="column1">
         <div class="card">
           <h3>Answers thru the Word of God</h3>
           <p>Thank you Jesus for the wonderful experience at the retreat. I am able to pray really well. As Fr. Joshy preached about Family Life & I got an answer to my problems.<br>   Nayanthara Mathew, Old Bridge NJ</p>
@@ -739,13 +259,13 @@
       </div>
 
       <div class="column">
-        <div class="cardmove6">
+        <div class="card">
           <h3>Shoulder Pain Gone</h3>
           <p>I had a shoulder pain for over an year and it was healed during the Saturday's Healing-adoration. Filled with peace, love, joy & amazing strength to face any obstacle with Christ. I am filled with desire to be closer to Jesus more and more as a family.<br>   Rasanga, Bronx, NY</p>
         </div>
       </div>
 
-      <div class="column">
+      <div class="column1">
         <div class="card">
           <h3>Gift of Tears during Confession & Vision</h3>
           <p>I had a vision of high waters flooding the center. Cried from the beginning of the retreat to the end. The waters were from the heart of Jesus and from His side, washing and healing. I had the gift of tears during confession - it was unlike any other confession. Very peaceful. Also, during healing adoration, the body of Jesus in the monstrance appeared in pink puffy flesh color. Through it were three darker red stripes. I heard the message: 'By my stripes you are healed'. This vision was during the entire healing service.<br> --Patricia Hess, Medford NJ</p>
@@ -753,7 +273,7 @@
       </div>
 
       <div class="column">
-        <div class="cardmove7">
+        <div class="card">
           <h3>High Fever leaves the Boy</h3>
           <p> received inner-healing & had a good confession and inner healing. My son had high fever on the 1st and 2nd day of the retreat. He got better miraculously on the 3rd day and he was back to normal. He's going back as a happy, cheerful kid. Praise God<br>   Iris Mukalel, Somerset NJ</p>
         </div>
@@ -766,8 +286,8 @@
         </div>
       </div>
 
-      <div class="column">
-        <div class="cardmove8">
+      <div class="column1">
+        <div class="card">
           <h3>Knees made strong and message to quit smoking</h3>
           <p>Made a good confession. For the first time I could attend a full mass kneeling down. God is telling me not to smoke anymore. <br>   Nikhil Varghese, NY</p>
         </div>
@@ -780,8 +300,8 @@
         </div>
       </div>
 
-      <div class="column">
-        <div class="cardmove9">
+      <div class="column1">
+        <div class="card">
           <h3>Improved Blood Circulation</h3>
           <p>Since 2007, I'd suffering from poor blood circulation to my legs and had pain all the time. During the Retreat, I experienced heat in both of my legs and all pain was gone. I felt very light. Great joy and peace fills my heart. Experienced love & presence of the Holy Spirit all through. My faith is renewed and I feel a great love for Jesus. <br>    Sr.Bernadette Gachiri, Elmer, NJ</p>
         </div>
@@ -794,8 +314,8 @@
         </div>
       </div>
 
-      <div class="column">
-        <div class="cardmove9">
+      <div class="column1">
+        <div class="card">
           <h3>Healing of Endometriosis</h3>
           <p>I have been suffering from Endometriosis for many years. Last year I attended a 3-Day Live-in Retreat at Divine Mercy Healing Center. After the Retreat I returned home healed. I haven't had the problem since then. <br> -- Maureen Nwoye, Richmond, VA</p>
         </div>
@@ -808,8 +328,8 @@
         </div>
       </div>
 
-      <div class="column">
-        <div class="cardmove9">
+      <div class="column1">
+        <div class="card">
           <h3>Strength to the Legs</h3>
           <p>I broke my kneecap and so couldn't walk without a cane. The wonderful Lord healed me and I was able to kneel and walk without a cane. Lot of Fear & anxiety in life disappeared.<br>   Regina Sibiri, Brooklyn, NY</p>
         </div>
@@ -822,8 +342,8 @@
         </div>
       </div>
 
-      <div class="column">
-        <div class="cardmove10">
+      <div class="column1">
+        <div class="card">
           <h3>ENT Prob. Gone & Healing after Brain surgery</h3>
           <p>I cancelled my GI appointment on June 19 to come to the Retreat. The 3-Day Retreat was a blessing. And later, the ENT Specialist couldn't find the fish bone in my throat. I attended the Retreat also to thank the Lord for healing my daughter who underwent a brain surgery. Thank you Jesus. God bless Divine Mercy Center.<br> --- Joyce Peters Natter, NY.</p>
         </div>
@@ -837,13 +357,13 @@
       </div>
 
       <div class="column">
-        <div class="cardmove10">
+        <div class="card">
           <h3>Power of Prayer travels miles</h3>
           <p>I requested prayers at the Divine Mercy Healing Center for my mom who was seriously ill back home. She was admitted in the ICU. I was given a healing Word of God by the priest to be read & prayed. Everyday my mother got better. On the first day of my Retreat she was already home. Praise the Lord. <br>--Kennedy Doss, East Brunswick, NJ</p>
         </div>
       </div>
 
-      <div class="column">
+      <div class="column1">
         <div class="card">
           <h3>Blessed to see the Face of Jesus</h3>
           <p>During the healing adoration, Jesus my Lord and Savior let me see His human face thrice. I thank Jesus for His presence and the Father for His love for us.<br>   Claudette Exil, Union, NJ</p>
@@ -851,13 +371,13 @@
       </div>
 
       <div class="column">
-        <div class="cardmove11">
+        <div class="card">
           <h3>Sacrament of Confession after 20 years</h3>
           <p>It was an amazing experience I had during Confession after almost 20 years. As I was confessing my sins to the priest, I felt pain leaving my body and a large weight being lifted off me. Glory to YOU Jesus. <br>  Jackie Alexsandra, Montclair, NJ</p>
         </div>
       </div>
 
-      <div class="column">
+      <div class="column1">
         <div class="card">
           <h3>Prayed for a Child and Blessed with Twins</h3>
           <p>We got married in 2010 and for 3 years we have been praying for the gift of a child. In Sept. 2013, we attended a Retreat here at Divine Mercy Center and in Dec. we realized that God was so gracious to us. Our joy was doubled at the birth of healthy Twins, Asher & Annabel. All Glory & Thanksgiving to Jesus.<br>    Anto & Anu, Yonkers, NY.</p>
@@ -865,7 +385,7 @@
       </div>
 
       <div class="column">
-        <div class="cardmove12">
+        <div class="card">
           <h3>Better Eyesight</h3>
           <p>During my Retreat here at Divine, I observed lesser pain in my back and my health is okay. The Lord touched my eyes and my eyesight has improved. In Jesus Name, Amen.  <br> Dean Fernandes, Harrisburg, PA.</p>
         </div>
@@ -878,8 +398,8 @@
         </div>
       </div>
 
-      <div class="column">
-        <div class="cardmove13">
+      <div class="column1">
+        <div class="card">
           <h3>Plantar Fasciitis healed</h3>
           <p>I was suffering from Plantar Fasciitis for 4 years. Jesus healed me at this Retreat. Praise the Lord  <br> Apnamol Thuruthikara, NJ</p>
         </div>
@@ -892,8 +412,8 @@
         </div>
       </div>
 
-      <div class="column">
-        <div class="cardmove13">
+      <div class="column1">
+        <div class="card">
           <h3>Healing of Mind, Body & Spirit</h3>
           <p>During the Retreat, I realized my mistakes, sins. Received healing in the elbow. I understood the worth of my wife, children & family. I experienced a complete healing during my confession and was filled with God's love. Getting leave from work (boss was muslim) was a miracle. Thank you Jesus  <br> Lalakatissa, Secaucus, NJ
           <p>
@@ -908,13 +428,13 @@
       </div>
 
       <div class="column">
-        <div class="cardmove14">
+        <div class="card">
           <h3>Blessing of a child</h3>
           <p>Felt peace & joy from within. We attended prayers and retreats here and prayed for a child. Now we are blessed with a baby boy. I had a great experience of the Holy Spirit during the adoration. Burdens and pains are all gone. Thank you Jesus. <br>--- Prasad</p>
         </div>
       </div>
 
-      <div class="column">
+      <div class="column1">
         <div class="card">
           <h3>Better eye-sight</h3>
           <p>I did understand the importance of forgiveness and the power of the Holy Eucharist. Learnt how to be a better parent. In the retreat I have improved my eye-sight. Thank you Jesus. <br> ---George Kokkatt, NY.
@@ -924,7 +444,7 @@
       </div>
 
       <div class="column">
-        <div class="cardmove15">
+        <div class="card">
           <h3>Deep Faith in the Eucharist</h3>
           <p>Regarding my faith in the Holy Eucharist, something in me has totally changed. Now I have a deep faith that it is Jesus' body and blood in the Eucharist. I participate in the holy sacrifice of the Mass with complete devotion and feel closer to Jesus than I ever experienced. Pain in my left knee & the calf muscle are healed.
               
@@ -932,7 +452,7 @@
         </div>
       </div>
 
-      <div class="column">
+      <div class="column1">
         <div class="card">
           <h3>Integral Healing-body, mind & spirit</h3>
           <p>I had a problem to forgive people who had wounded me in my childhood. The areas that needed deliverance were pride & hatred. When I confessed the sin of pride, I felt the peace of the Lord in my heart. I was healed of itching ear and bursitis on the knee. Thank you Jesus for healing me.
@@ -942,7 +462,7 @@
       </div>
 
       <div class="column">
-        <div class="cardmove16">
+        <div class="card">
           <h3>No more cramps</h3>
           <p>This was my first Retreat. Came with back-ache & cramps in my left leg. I was praying to God with tears to relieve me from the back pain. And HE touched me & I'm healed. Thank You Lord.
 <br>
@@ -960,8 +480,8 @@
         </div>
       </div>
 
-      <div class="column">
-        <div class="cardmove17">
+      <div class="column1">
+        <div class="card">
           <h3>Missionary Work</h3>
           <p>When I heard a message during prayer given by one of the priests, mentioning missionary work, I felt happy, accepted, renewed. He thinks it might be my calling. Now I know God is true & real. All the worldly songs stuck in my head disappeared and the only songs I heard in the night were from the Lord. I felt immense peace flow. <br>---Teena Roy</p>
         </div>
@@ -977,7 +497,7 @@
       </div>
 
       <div class="column">
-        <div class="cardmove18">
+        <div class="card">
           <h3>Healing & Vision</h3>
           <p>After the Mass, on the 2nd day of the Retreat, my knees didn't hurt at all. I had a strange experience. I began to feel like the ball joint of the knee was spinning and seemed like my knee was changing for a few minutes. Praise the Lord for this healing.
 <br>
@@ -985,7 +505,7 @@
         </div>
       </div>
 
-      <div class="column">
+      <div class="column1">
         <div class="card">
           <h3>Blurred vision gone</h3>
           <p>Made a very good confession. Pain in the eyes, blurred vision are gone. Healing to my arm as well. Thank you Jesus.
@@ -995,7 +515,7 @@
       </div>
 
       <div class="column">
-        <div class="cardmove19">
+        <div class="card">
           <h3>Healing after Confession</h3>
           <p>I was healed of my pain in the chest. Got an instantaneous relief after making a good confession. My selfish attitude has vanished.
 <br>
@@ -1003,7 +523,7 @@
         </div>
       </div>
 
-      <div class="column">
+      <div class="column1">
         <div class="card">
           <h3>Wrist healed</h3>
           <p>Received healing in the wrist. Had a nice prayer experience. I shall encourage others to come for a retreat.
@@ -1013,7 +533,7 @@
       </div>
 
       <div class="column">
-        <div class="cardmove20">
+        <div class="card">
           <h3>Amazing Inner Healing</h3>
           <p>My parents divorced when I was 2 months old. My dad rejected me when I was 8 years old and 16 years old when I met him on the road. I do not know whether he is dead or alive. I realized I blocked him out completely from my thoughts. For the first time, during this 3-day Retreat, I forgave him in the retreat and confessed my anger, bitterness, rejection and all the wounds. Thank you Jesus.
 <br>

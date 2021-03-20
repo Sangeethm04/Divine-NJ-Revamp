@@ -295,7 +295,7 @@ body {font-family: "Lato", sans-serif;}
     width: 50px;
     text-align: center;
     text-decoration: none;
-    float: left;
+    float: right;
     border-radius: 50%;
   }
   
@@ -305,7 +305,7 @@ body {font-family: "Lato", sans-serif;}
   .fa-youtube {
   background: #bb0000;
   color: white;
-  font-size: xx-large;
+  font-size: small;
 }
 
 .testtext {
