@@ -13,7 +13,6 @@ body {
   overflow: hidden;
   border-radius: 5px;
   align-items: center;
-  height: 50px;
 }
 
 /* Style the links inside the navigation bar */
@@ -77,6 +76,12 @@ body {
 .topnav2 a.active {
   background-color: #d34419;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav2 {
+      height: 102px;
+  }
 }
 
   /*side navigation bar*/
@@ -373,7 +378,7 @@ body {font-family: "Lato", sans-serif;}
       opacity: 0.7;
   }
   .fa-youtube {
-  background: #bb0000;
+  background: #eb0303;
   color: white;
   font-size: small;
   transform: translate(0px, 2px);
