@@ -148,7 +148,7 @@ body {
     z-index: 1;
   }
 
-  @media screen and (max-width: 1366px) {
+  @media screen and (max-width: 1920px) {
     .rightnav   {
         transform: translate(-1%);
         margin-bottom: 18px;
