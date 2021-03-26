@@ -156,14 +156,6 @@ body {
     }
   }
 
-  @media screen and (max-width: 1366px) {
-    .sidenav   {
-        transform: translate(-1%);
-        margin-bottom: 18px;
-        transform: translate(0, -1320px)
-    }
-  }
-
   @media screen and (max-width: 600px) {
     .rightnav {
         width: 90%;
