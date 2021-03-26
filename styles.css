@@ -88,7 +88,6 @@ body {
   .sidenav {
     width: 20%;
     height: auto;
-    position: relative;
     background: #eee;
     overflow-x: hidden;
     padding: 8px 0;
@@ -114,7 +113,7 @@ body {
   @media screen and (max-width: 600px) {
     .sidenav {
         width: 90%;
-        transform: translate(5%);
+        transform: translate(6%);
     }
   }
   
@@ -130,14 +129,13 @@ body {
     height: auto;
     position: relative;
     z-index: 1;
-    top: 20px;
-    right: 15px;
+    top: 8px;
+    right: 17px;
     background: #eee;
     overflow-x: hidden;
     padding: 8px 0;
     border-radius: 8px;
     text-align: center;
-    transform: tra;
   }
   
   .rightnav  {
@@ -150,12 +148,31 @@ body {
     z-index: 1;
   }
 
+  @media screen and (max-width: 1366px) {
+    .rightnav   {
+        transform: translate(-1%);
+        margin-bottom: 18px;
+        transform: translate(0, -2260px)
+    }
+  }
+
+  @media screen and (max-width: 1366px) {
+    .sidenav   {
+        transform: translate(-1%);
+        margin-bottom: 18px;
+        transform: translate(0, -1320px)
+    }
+  }
+
   @media screen and (max-width: 600px) {
     .rightnav {
         width: 90%;
-        transform: translate(-2%);
+        transform: translate(-1%);
+        margin-bottom: 18px;
     }
   }
+
+
   
   /*End of right sidenav*/
 
@@ -396,18 +413,23 @@ body {font-family: "Lato", sans-serif;}
     margin-top: 4px; 
     height: auto; 
     width:50%;
+    border-radius: 8px;
 }
 
 @media screen and (max-width: 600px){
     .poststyle {
-        margin-top: 5px; 
+        margin-top: 4px; 
         height: auto; 
         width:90%;
-        transform: translate(-6%);
-
-      
+        transform: translate(-5%);
+        border-radius: 8px;
     }
   
+  }
+
+  #container {
+    margin-top: 5px;
+
   }
 
 
