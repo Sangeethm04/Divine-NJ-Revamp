@@ -1,5 +1,6 @@
 
 body {
+  margin: 0;
     font-family: "Times New Roman", Times, serif;
 }
 
@@ -173,11 +174,13 @@ body {
     .slideshow-container { 
         position: relative;
         margin: auto;
-        width: 90%;
+        width: 100%;
         margin-top: 1%;
     }
   }
 
+  
+  
   
   /* Caption text */
   .text {
@@ -383,6 +386,7 @@ body {font-family: "Lato", sans-serif;}
     text-align: center;
     text-decoration: none;
     float: right;
+    margin-right: 3px;
     border-radius: 50%;
   }
   
