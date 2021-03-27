@@ -1,9 +1,7 @@
 
 body {
-    margin: 0;
     font-family: "Times New Roman", Times, serif;
 }
-
 
 /*Navigation Bar*/
 
@@ -89,9 +87,10 @@ body {
     width: 20%;
     height: auto;
     background: #eee;
-    overflow-x: hidden;
     padding: 8px 0;
     border-radius: 8px;
+    margin-left: 6px;
+    display: inline-block;
   }
   
   .sidenav  {
@@ -109,14 +108,6 @@ body {
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
   }
-
-  @media screen and (max-width: 600px) {
-    .sidenav {
-        width: 90%;
-        transform: translate(6%);
-    }
-  }
-  
   
 
   /* End of left sidebar*/
@@ -127,15 +118,12 @@ body {
     width: 20%;
     float: right;
     height: auto;
-    position: relative;
-    z-index: 1;
     top: 8px;
     right: 17px;
     background: #eee;
     overflow-x: hidden;
     padding: 8px 0;
     border-radius: 8px;
-    text-align: center;
   }
   
   .rightnav  {
@@ -145,14 +133,13 @@ body {
     color: #05111b;
     display: block;
     box-shadow: 5px 10px 8px #888888;
-    z-index: 1;
   }
 
-  @media screen and (max-width: 1920px) {
-    .rightnav   {
-        transform: translate(-1%);
-        margin-bottom: 18px;
-        transform: translate(0, -2260px)
+  @media screen and (max-width: 600px) {
+    .sidenav   {
+      width: 90%;
+      transform: translate(6%);
+      margin-left: 0px;
     }
   }
 
@@ -177,8 +164,9 @@ body {
   .slideshow-container {
     position: relative;
     margin: auto;
-    width: 50%;
+    width: 100%;
     margin-top: 1%;
+    margin: 0 auto;
   }
 
   @media only screen and (max-width: 600px) {
@@ -190,8 +178,6 @@ body {
     }
   }
 
-  
-  
   
   /* Caption text */
   .text {
@@ -242,21 +228,38 @@ body {
   }
 
 .posts {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    height: auto;
-    text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
 }
 
 @media screen and (max-width: 600px) {
     .posts {
         width: 100%;
-        transform: translate(5%);
+        transform: translate(10%);
         margin-top: -2.8%;
     }
   }
+
+.poststyle {
+    margin-top: 4px; 
+    height: auto; 
+    width:100%;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 600px){
+    .poststyle {
+        margin-top: 4px; 
+        height: auto; 
+        width:90%;
+        transform: translate(-5%);
+        border-radius: 8px;
+    }
+  
+  }
+
 
   /*Sign Up Button*/
   .signup {
@@ -401,27 +404,14 @@ body {font-family: "Lato", sans-serif;}
   border-style: solid;
 }
 
-.poststyle {
-    margin-top: 4px; 
-    height: auto; 
-    width:50%;
-    border-radius: 8px;
-}
 
-@media screen and (max-width: 600px){
-    .poststyle {
-        margin-top: 4px; 
-        height: auto; 
-        width:90%;
-        transform: translate(-5%);
-        border-radius: 8px;
-    }
-  
-  }
 
   #container {
     margin-top: 5px;
+  }
 
+  .full {
+    grid-template-columns: 1 fr, 1 fr 1fr;
   }
 
 
