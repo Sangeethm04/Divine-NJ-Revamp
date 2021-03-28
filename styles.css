@@ -279,7 +279,8 @@ body {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     border-radius: 5px;
-    
+    height: auto;
+    width: auto;
   }
   
   .signup:hover{
