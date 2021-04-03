@@ -23,25 +23,33 @@
 
 <link rel="stylesheet" href="styles.css">
 
-<body style="background-color: rgb(255, 255, 255);">
-        <!--Header-->
-     <div class="head" data-role="header" >
-        <h1 class="mainbibleverse">I am the Lord who heals you (Exodus 15:26)</h1>
-        <h1 class="maintext"style="text-align: center; margin-top: 0.7%; margin-bottom: 1%; ;">Divine Prayer Center</h1>
-        
-     </div>
-        <!--Tabs-->
-    <div class="topnav">
-      <a href="/">Home</a>
-      <a  href="ministries.html">Ministries</a>
-      <a  href="testimony.html">Testimonies</a>
-      <a  class="active" href="articles.html">Articles</a>
-      <a  href="contact.html">Contact</a>
-        <div class="topnav-right">
-        <a style="width: auto; height: 48px; transform: translate(0px, 0.2px);"class="fab fa-paypal" href="https://www.paypal.com/donate?token=4Ym1H4QDBK6GYvuoRwebn42jegeqVsAs-3LSv0Xh0mOrRHctvSnv9WYnswwYAph6A17qrgpqpLrK3CHh">  Donate</a>
-        <a href="https://www.youtube.com/channel/UCnxcnQtQv7EVis2MImW0Gjw" class="fa fa-youtube"></a>
-        </div>
+<body style="background-color: rgb(255, 255, 255); overflow-x: hidden;">
+  <!--Header-->
+<div class="head" data-role="header" >
+  <h1 class="mainbibleverse">I am the Lord who heals you (Exodus 15:26)</h1>
+  <h1 class="maintext"style="text-align: center; margin-top: 0.7%; margin-bottom: 1%;">Divine Prayer Center</h1>
+  
 </div>
+  <!--Tabs-->
+<div class="topnav">
+  <a   href="/">Home</a>
+  <a  href="ministries.html">Ministries</a>
+  <a  href="testimony.html">Testimonies</a>
+  <a  class="active" href="articles.html">Articles</a>
+  <a  href="contact.html">Contact</a>
+  <div class="topnav-right">
+    <div id="donate"> 
+      
+      <form  target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="PASK8874AB2CN" />
+          <input type="image" src="Donate-button.png" style="float:right; width:auto; height: 45px; transform: translate(0, 1px); object-fit: contain;" name="submit" title="PayPal" alt="Donate with PayPal button"/>
+      </form>
+  </div>   
+
+  </div>
+</div>
+
 <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About Us(A Brief History)</button>
     <button class="tablinks" onclick="openCity(event, 'Weep')">Why are you weeping?</button>

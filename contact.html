@@ -59,13 +59,19 @@ body {
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
   .column {
-    width: 100%;
+    width: 90%;
     display: block;
+    margin: 0 auto;
     margin-bottom: 20px;
-    transform: translate(0%);
-    overflow-x: visible;
-    overflow-y: visible;
+    transform: translate(6.5%);
   }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    }
+
+
 }
 
 
@@ -74,30 +80,37 @@ body {
 
 <link rel="stylesheet" href="styles.css">
 
-<body style="background-color: rgb(255, 255, 255);">
-        <!--Header-->
-     <div class="head" data-role="header" >
-        <h1 style="font-size: 23px; padding: 0px 0px 2px 0px; border-radius: 5px; border:3px; border-style:solid; border-color:#FF0000; padding: .3em; width: fit-content; position: relative; margin-bottom:-1%; margin-left: .5%;">I am the Lord who heals you (Exodus 15:26)</h1>
-        <h1 class="maintext"style="text-align: center; margin-top: 0.7%; margin-bottom: 1%; ;">Divine Prayer Center</h1>
-        
-     </div>
-        <!--Tabs-->
-    <div class="topnav">
-      <a  href="/">Home</a>
-      <a  href="ministries.html">Ministries</a>
-      <a  href="testimony.html">Testimonies</a>
-      <a  href="articles.html">Articles</a>
-      <a  class="active" href="contact.html">Contact</a>
-        <div class="topnav-right">
-        <a style="width: auto; height: 48px; transform: translate(0px, 0.2px);"class="fab fa-paypal" href="https://www.paypal.com/donate?token=4Ym1H4QDBK6GYvuoRwebn42jegeqVsAs-3LSv0Xh0mOrRHctvSnv9WYnswwYAph6A17qrgpqpLrK3CHh">  Donate</a>
-        <a href="https://www.youtube.com/channel/UCnxcnQtQv7EVis2MImW0Gjw" class="fa fa-youtube"></a>
-        </div>
+<body style="background-color: rgb(255, 255, 255); overflow-x: hidden;">
+  <!--Header-->
+<div class="head" data-role="header" >
+  <h1 class="mainbibleverse">I am the Lord who heals you (Exodus 15:26)</h1>
+  <h1 class="maintext"style="text-align: center; margin-top: 0.7%; margin-bottom: 1%;">Divine Prayer Center</h1>
+  
+</div>
+  <!--Tabs-->
+<div class="topnav">
+  <a   href="/">Home</a>
+  <a  href="ministries.html">Ministries</a>
+  <a  href="testimony.html">Testimonies</a>
+  <a  href="articles.html">Articles</a>
+  <a  class="active" href="contact.html">Contact</a>
+  <div class="topnav-right">
+    <div id="donate"> 
+      
+      <form  target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="PASK8874AB2CN" />
+          <input type="image" src="Donate-button.png" style="float:right; width:auto; height: 45px; transform: translate(0, 1px); object-fit: contain;" name="submit" title="PayPal" alt="Donate with PayPal button"/>
+      </form>
+  </div>   
+
+  </div>
 </div>
 
 <h1 style="text-align: center; color: rgb(255, 60, 0);">Our Contact Information</h3>
 <h4 style="text-align: center;">Director - Fr. Thomas Sunil Aenekatt, VC.</h5>
 <h5 style="text-align: center;">Asst. Director - Fr. Baiju P. Antony, VC.</h6>
-<h2 style="text-align: center;">Phone: (908) 835 9989<br>
+<h2 style="text-align: center;">Phone: (908) 835-9989<br>
     Email: dmhcnj@gmail.com</h2>
 
         <div class="row">

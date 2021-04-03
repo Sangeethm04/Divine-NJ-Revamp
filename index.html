@@ -110,12 +110,28 @@
             }
         }
 
-          .saintspeaks {
-            text-align: center;
-            text-decoration: none;
-            color: white;
-            
+         /*Sign Up Button*/
+        .saintspeaks {
+        background-color: #19b9be; /* Green */
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        border-radius: 5px;
+        height: auto;
+        margin-top: 10px;
+        width: 100%;
           }
+      
+      .saintspeaks:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
+      } 
+
 
         </style>
 
@@ -139,17 +155,14 @@
         <a  href="articles.html">Articles</a>
         <a  href="contact.html">Contact</a>
         <div class="topnav-right">
-          <div id="donate" style="width: auto;text-align: right;background-color:none;position: relative;float: right;"> 
+          <div id="donate"> 
+            
             <form  target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick" />
                 <input type="hidden" name="hosted_button_id" value="PASK8874AB2CN" />
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal" alt="Donate with PayPal button" />
-                <img  alt="" border="0" src="paypal-brands.svg" width="0" height="0" />
+                <input type="image" src="Donate-button.png" style="float:right; width:auto; height: 45px; transform: translate(0, 1px); object-fit: contain;" name="submit" title="PayPal" alt="Donate with PayPal button"/>
             </form>
         </div>   
-        <!--<a style="width: auto; height: 48px; transform: translate(0px, 0.2px);"class="fab fa-paypal" href="https://www.paypal.com/cgi-bin/webscr" <input type="hidden" name="cmd" value="_s-xclick" />
-                <input type="hidden" name="hosted_button_id" value="PASK8874AB2CN" />>  Donate</a>-->
-        <a href="https://www.youtube.com/channel/UCnxcnQtQv7EVis2MImW0Gjw" class="fa fa-youtube"></a>
 
         </div>
 </div>
@@ -220,7 +233,12 @@
                 <br>
                 11:30 AM: Holy MASS
         </p>  
+        <a class="youtube" target="_blank" href='https://www.youtube.com/channel/UCnxcnQtQv7EVis2MImW0Gjw'><b>YouTube Channel</b></a>
         </div>
+          
+        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/ZDaQMFQQ82w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="border-radius:5px;" allowfullscreen></iframe>
+
+
     </div>
     <div id="b" class="column2" style="margin: 2px; ">
     <!--Slideshow-->
@@ -308,7 +326,7 @@
       <!--Slideshow end-->
 
       <div style="margin-top: 5px; margin-bottom: 5px; overflow-x: hidden;">
-        <h2 style="background-color: rgb(211, 211, 211); text-align:center; border-radius: 6px; margin-bottom: 5px; margin-top: 5px; padding: 5px; font-family: 'Kiwi Maru', serif;">Event Flyers</h2>
+        <h2 style="background-color: rgb(219, 218, 218); text-align:center; border-radius: 6px; margin-bottom: 5px; margin-top: 5px; padding: 5px; font-family: 'Kiwi Maru', serif;">Event Flyers</h2>
       </div>
   
   <div class="posts1">
@@ -320,6 +338,7 @@
   <!--<div>
     <iframe style="margin: 0 auto;" width="50%" height="315" src="https://www.youtube.com/embed/sAu5-1c7GoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>-->
+
     </div>
 
     <div id="c"class="column3" >
@@ -370,7 +389,7 @@
                 <b> April 9, 10 & 11: </b>
                 <br>
                 Retreat in Malayalam<br>
-                <!--<a class="signup" target="_blank" href='https://divinemercyprayercenter.netlify.app/form'>Sign Up</a>-->
+                <!--<a class="signup" target="_blank" href='form.html'>Sign Up</a>-->
          </p>
 
          <p style="text-align: center;">
@@ -378,7 +397,7 @@
          </p>
         </div>
         
-        <div style="background: rgb(10, 172, 164); margin-top: 5px; border-radius: 8px; padding: 7px 8px 6px 16px; box-shadow: 5px 10px 8px #888888; text-align: center; overflow-x: hidden;">
+        <div>
 
           <a class="saintspeaks" target="_blank" href='saintsspeak.html'><b>Saint Speak</b></a>
 

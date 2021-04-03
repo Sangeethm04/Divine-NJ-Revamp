@@ -264,7 +264,7 @@ body {
   }
 
 
-  /*Sign Up Button*/
+ /*Sign Up Button*/
   .signup {
     background-color: #4c98af; /* Green */
     border: none;
@@ -284,6 +284,27 @@ body {
   }
   
   .signup:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
+  }  
+
+   /*Sign Up Button*/
+   .youtube {
+    background-color: #FF0000; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 8px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    width: 100%; 
+    text-align: center;
+  }
+  
+  .youtube:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
   } 
 
@@ -381,24 +402,22 @@ body {font-family: "Lato", sans-serif;}
   /*Articles styling page done*/
 
   .fa {
-    padding: 10px;
     font-size: xx-large;
-    width: 50px;
+    width: auto;
     text-align: center;
     text-decoration: none;
     float: right;
     margin-right: 3px;
-    border-radius: 50%;
   }
   
   .fa:hover {
       opacity: 0.7;
   }
   .fa-youtube {
-  background: #eb0303;
   color: white;
   font-size: small;
-  transform: translate(0px, 2px);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .testtext {
@@ -432,5 +451,28 @@ body {font-family: "Lato", sans-serif;}
     margin-bottom:-1%; 
     margin-left: .5%;
   }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius:5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 
 
