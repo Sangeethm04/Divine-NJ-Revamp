@@ -45,7 +45,7 @@ function logout(){
 }
 
 function googleLogin() {
-  const provider = new firebase.auth.GoogleAuthProvider();
+  const provider = firebase.auth.GoogleAuthProvider();
 
   firebase.auth().signInWithPopup(provider)
 
