@@ -450,6 +450,7 @@ body {font-family: "Lato", sans-serif;}
     position: relative; 
     margin-bottom:-1%; 
     margin-left: .5%;
+    text-align:center;
   }
 
   /* width */
@@ -460,19 +461,19 @@ body {font-family: "Lato", sans-serif;}
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #ffffff; 
   border-radius:5px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: rgb(175, 175, 175); 
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #dad8d8; 
 }
 
 
