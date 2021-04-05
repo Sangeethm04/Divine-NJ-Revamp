@@ -51,8 +51,8 @@ function googleLogin() {
 
   .then(result => {
     const user = result.user;
-    document.write('Hello ${user.displayname}');
-    console.log(user)
+    document.getElementById("user_div").style.display = "block";
+    document.getElementById("login_div").style.display = "none";
   })
 
   .catch(console.log)
