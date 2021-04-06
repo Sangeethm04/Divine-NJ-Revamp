@@ -246,19 +246,24 @@ body {
   }
 
 .poststyle {
-    margin-top: 4px; 
+    margin-top: 5px; 
     height: auto; 
-    width:100%;
+    width:90%;
     border-radius: 8px;
+    /*transform: translate(20%, 0%);*/
+    margin-left:5%;
+    margin-right:95%;
 }
 
 @media screen and (max-width: 600px){
     .poststyle {
-        margin-top: 4px; 
+        margin-top: 8px; 
         height: auto; 
         width:90%;
         transform: translate(-5%);
         border-radius: 8px;
+        margin-left:0%;
+        margin-right:0%;
     }
   
   }
