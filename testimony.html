@@ -23,21 +23,57 @@
 
     <style>
 
-    .card-columns {
-    text-align: center ;
-    padding: 0 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin: 10px;
-    }
-    .card{
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-      background-color: #f1f1f1;
-    }
+              .card-columns {
+              text-align: center ;
+              padding: 0 10px;
+              margin-left: 10px;
+              margin-right: 10px;
+              margin: 10px;
+              }
+              .card{
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+                background-color: #f1f1f1;
+              }
 
-    h5 {
-          font-weight: bold;  
-        }
+              h5 {
+                    font-weight: bold;  
+                  }
+
+                  /*Navigation Bar*/
+
+              /* Add a background color to the top navigation */
+              .navs {
+                background-color: rgba(4, 114, 240, 0.753);
+                overflow: hidden;
+                border-radius: 5px;
+                align-items: center;
+              }
+
+              /* Style the links inside the navigation bar */
+              .navs a {
+                float: left;
+                color: #ffffff;
+                text-align: center;
+                padding: 11.62px 16px;
+                text-decoration: none;
+                font-size: 17px; 
+              }
+
+              .navs-right {
+                float: right;
+              }
+
+              /* Change the color of links on hover */
+              .navs a:hover {
+                background-color: #ddd;
+                color: black;
+              }
+
+              /* Add a color to the active/current link */
+              .navs a.active {
+                background-color: #d34419;
+                color: white;
+              }
 
     </style>
 </head>
@@ -47,18 +83,18 @@
 <body style="background-color: rgb(255, 255, 255);">
         <!--Header-->
      <div class="head" data-role="header" >
-      <h1 style="margin-top: 15px;font-size: 23px; padding: 0px 0px 2px 0px; border-radius: 5px; border:3px; border-style:solid; border-color:#FF0000; padding: .3em; width: fit-content; position: relative; margin-bottom:-1%; margin-left: .5%; text-align: center;"><b>I am the Lord who heals you (Exodus 15:26)</b></h1>
-        <h2 class="maintext"style="text-align: center; margin-top: 0.7%; margin-bottom: 1%;"><b>Divine Prayer Center</b></h2>
+      <h1 style="margin-top: 15px;font-size: 23px; border-radius: 5px; border:3px; border-style:solid; border-color:#FF0000; padding: .3em; width: fit-content; position: relative; margin-bottom:-1%; margin-left: .5%; text-align: center;"><b>I am the Lord who heals you (Exodus 15:26)</b></h1>
+        <h2 class="maintext"style="text-align: center; margin-top: 0.65%; margin-bottom: 1%;"><b>Divine Prayer Center</b></h2>
         
      </div>
         <!--Tabs-->
-        <div class="topnav">
+        <div class="navs">
           <a  href="/">Home</a>
           <a  href="ministries.html">Ministries</a>
           <a  class="active" href="testimony.html">Testimonies</a>
           <a  href="articles.html">Articles</a>
           <a  href="contact.html">Contact</a>
-          <div class="topnav-right">
+          <div class="navs-right">
             <div id="donate"> 
               
               <form  target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
