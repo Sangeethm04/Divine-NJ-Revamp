@@ -76,6 +76,21 @@ body {
 
 }
 
+#content2 {
+          position: relative;
+      }
+      #content2 img {
+          position: absolute;
+          top: -32px;
+          right: -25px;
+          width: 250px;
+      }
+
+      @media screen and (max-width: 900px) {
+      .log{
+      visibility: hidden;
+      }
+      }
 
  </style>
 </head>
@@ -86,6 +101,11 @@ body {
   <!--Header-->
 <div class="head" data-role="header" >
   <h1 class="mainbibleverse">I am the Lord who heals you (Exodus 15:26)</h1>
+  <div class="log"id="content2">
+    <a href="index.html">
+      <img src="Assets/Divine Logo Crown.png"/>
+    </a>
+  </div>
   <h1 class="maintext"style="font-family: 'Diplomata SC', cursive; font-family: 'Girassol', cursive; text-align: center; margin-top: 0.7%; font-size:50px">Divine Mercy Healing Center</h1>
   <h2 class="maintext"style="text-align: center; margin-top: -40px;">(a.k.a., Divine Prayer Center)</h2>
   
