@@ -36,6 +36,22 @@
       visibility: hidden;
       }
       }
+
+      .picturesaint {
+        width: 320px;
+        min-width: none;
+        margin-right:8px;
+        border-radius:5px;
+      }
+
+          /* Responsive columns - one column layout (vertical) on small screens */
+    @media screen and (max-width: 750px) {
+      .picturesaint {
+        width: 120px;
+      }
+    }
+
+
     </style>
     
 </head>
@@ -102,11 +118,12 @@
 
   <!-- Page content -->
   <div id="About" class="tabcontent">
-    <img style="margin-right: 5px; width: 25%; height: 25%; border-radius: 5px; float: left; "class="aboutpicture" src="divine-easton.jpg"alt="Divine Easton">
     <h3 style="text-align: center; color: #e91010;">ABOUT US</h3>
     <p style="line-height: 25px; font-size: medium; text-align: center; margin-top: -18px;">
         (A Brief History)
     </p>
+    <img class="picturesaint"  align="left" src="Assets/divine-easton.jpg">
+    <!--<img class="picturesaint"  align="right" src="Assets\divine-washington.png">-->
     <p class="textinside"> 
         The Vincentian Congregation (VC) was founded on November 20, 1904 in the diocese of Ernakulam, Kerala, India. <br>
       </p>  
@@ -247,6 +264,7 @@
   <div id="Rosary" class="tabcontent">
     <h3 style="text-align: center; color: #e91010;">POWER AND DELIVERANCE THRU THE ROSARY</h3>
         <p style="margin-top:-16px; text-align: center;" >Fr.Mathew Naickomparambil, vc</p>
+        <img class="picturesaint"  align="left" src="Assets\rosary-image.jpg">
     <p class="textinside">
       <b>Two thousand years ago,</b> Jesus died on the cross carrying our sins, sicknesses and sorrows. While praying the rosary, we meditate on the life of Jesus and therefore <b>we receive the deliverance and victory over sin, sickness and evil powers.</b>
     </p>
