@@ -236,57 +236,57 @@
 
         <div class="mySlides fade">
           <div class="numbertext">1 / 11</div>
-          <img src="slides\DivineMercy-msg.png" style="width:100%">
+          <img src="easter slides\DivineMercy-msg.png" style="width:100%">
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">2 / 11</div>
-          <img src="slides\Easter-msg.png" style="width:100%">
+          <img src="easter slides\Easter-msg.png" style="width:100%">
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">3 / 11</div>
-          <img src="slides\General-Slides1.png" style="width:100%">
+          <img src="easter slides\General-Slides1.png" style="width:100%">
         </div>
   
         <div class="mySlides fade">
           <div class="numbertext">4 / 11</div>
-          <img src="slides\General-Slides2.png" style="width:100%">
+          <img src="easter slides\General-Slides2.png" style="width:100%">
         </div>
   
         <div class="mySlides fade">
           <div class="numbertext">5 / 11</div>
-          <img src="slides\General-Slides3.png" style="width:100%">
+          <img src="easter slides\General-Slides3.png" style="width:100%">
         </div>
   
         <div class="mySlides fade">
           <div class="numbertext">6 / 11</div>
-          <img src="slides\General-Slides4.png" style="width:100%">
+          <img src="easter slides\General-Slides4.png" style="width:100%">
         </div>
   
         <div class="mySlides fade">
           <div class="numbertext">7 / 11</div>
-          <img src="slides\Heal-Me-Lord.png" style="width:100%">
+          <img src="easter slides\Heal-Me-Lord.png" style="width:100%">
         </div>
   
         <div class="mySlides fade">
           <div class="numbertext">8 / 11</div>
-          <img src="slides\HolySpirit-msg1.jpg" style="width:100%">
+          <img src="easter slides\HolySpirit-msg1.jpg" style="width:100%">
         </div>
   
         <div class="mySlides fade">
           <div class="numbertext">9 / 11</div>
-          <img src="slides\HolySpirit-msg2.jpg" style="width:100%">
+          <img src="easter slides\HolySpirit-msg2.jpg" style="width:100%">
         </div>
   
         <div class="mySlides fade">
           <div class="numbertext">10 / 11</div>
-          <img src="slides\HolySpirit-msg3.jpg" style="width:100%">
+          <img src="easter slides\HolySpirit-msg3.jpg" style="width:100%">
         </div>
   
         <div class="mySlides fade">
           <div class="numbertext">11 / 11</div>
-          <img src="slides\HolySpirit-msg4.jpg" style="width:100%">
+          <img src="easter slides\HolySpirit-msg4.jpg" style="width:100%">
         </div>
         
         </div>
@@ -313,9 +313,9 @@
     <img class="poststyle" src="feast 4-9.jpeg" alt="St. Joseph Retreat Flyer">
     </a>
       <img class="poststyle" src="malayalam retreat.jpeg" alt="Malayalam Retreat Flyer">-->
-      <img class="poststyle" src="Divine_Tamil_Service_APR17_2.jpg" alt="St. Joseph Retreat Flyer">
-      <img class="poststyle" src="spanish retreat4-6.jpeg" alt="Spanish Retreat Flyer">
-      <img class="poststyle" src="ST JOSEPH RETREAT.pptx.png" alt="St. Joseph Retreat Flyer">
+      <img class="poststyle" src="assets/Divine_Tamil_Service_APR17_2.jpg" alt="St. Joseph Retreat Flyer">
+      <img class="poststyle" src="assets/spanish retreat4-6.jpeg" alt="Spanish Retreat Flyer">
+      <img class="poststyle" src="assets/ST JOSEPH RETREAT.pptx.png" alt="St. Joseph Retreat Flyer">
   </div>
 
     </div>
@@ -388,15 +388,11 @@
     function showSlides() {
       var i;
       var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
       }
       slideIndex++;
       if (slideIndex > slides.length) {slideIndex = 1}    
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
       slides[slideIndex-1].style.display = "block";  
       setTimeout(showSlides, 5000); // Change image every 5 seconds
     }
