@@ -94,7 +94,6 @@ input, button {
   cursor: pointer;
 }
 
-
   </style>
 
 </head>
@@ -137,11 +136,14 @@ input, button {
     <h3>Welcome User</h3>
     <p id="user_para">Welcome. You're currently logged in.</p>
     <img style="margin-bottom: 8px;"class="poststyle" src="assets/yes meme.png" alt="40 Days Lent Flyer">
-    <a target="_blank" style="background-color:rgb(0, 255, 157); border-radius:8px; padding:5px; text-decoration:none; margin-bottom:50px;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Top Secret Page</a>
+    <button target="_blank" style="background-color:rgb(0, 255, 157); border-radius:8px; padding:5px; text-decoration:none; margin-bottom:5px;" onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';">Top Secret Page</button>
     <button onclick="logout()">Logout</button>
   </div>
 
 </div>
+
+
+
 
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script>
@@ -153,7 +155,7 @@ input, button {
     projectId: "divine-mercy-b265e",
     storageBucket: "divine-mercy-b265e.appspot.com",
     messagingSenderId: "705545618281",
-    appId: "1:705545618281:web:92a9bf8211579b83d673f8",
+    appId: "1:705545618281:web:92a9bf8211579bz83d673f8",
     measurementId: "G-73GKVKXLWR"
   };
   // Initialize Firebase
@@ -161,5 +163,11 @@ input, button {
   </script>
   <script src="index2.js"></script>
 
+<!--<div id="footer" class="footer">
+  <a style="text-decoration: none;;"href="https://www.google.com/maps?ll=40.682254,-75.213156&z=19&t=m&hl=en&gl=US&mapclient=embed&cid=9965414566934173152">
+  <p>131 Davis St, Easton, PA 18042</p>
+  </a>
+  <p> &copy; 2021 by Divine Mercy Healing Center.</p>
+</div>-->
 </body>
 </html>
