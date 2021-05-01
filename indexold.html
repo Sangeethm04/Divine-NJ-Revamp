@@ -25,14 +25,11 @@
     <style>
 
     html, body {
-      height: 100%;
     max-width: 100%;
     overflow-x: hidden;
     }
         * {
           box-sizing: border-box; 
-          margin: 0;
-          padding: 0;
         }
         
         /* Create three equal columns that floats next to each other */
@@ -132,13 +129,38 @@
       visibility:visible;
       }
       }*/
+
+      .poststyle {
+    margin-top: 5px; 
+    height: auto; 
+    width:90%;
+    border-radius: 8px;
+    /*transform: translate(20%, 0%);*/
+    margin-left:5%;
+    margin-right:95%;
+    border: 5px solid black;
+}
+
+@media screen and (max-width: 600px){
+    .poststyle {
+        margin-top: 8px; 
+        height: auto; 
+        width:90%;
+        transform: translate(-5%);
+        border-radius: 8px;
+        margin-left:0%;
+        margin-right:0%;
+        border: 3px solid black;
+    }
+  
+  }
       
         </style>
 
 
 </head>
 
-<link rel="stylesheet" href="styles copy.css">
+<link rel="stylesheet" href="styles.css">
 
 <body style="background-color: rgb(255, 255, 255); overflow-x: hidden;">
         <!--Header-->
@@ -321,6 +343,10 @@
       <img class="poststyle" src="Events/Spanish Service.jpeg" alt="Spanish Service Flyer">
       <img class="poststyle" src="assets/ST JOSEPH RETREAT.pptx.png" alt="St. Joseph Retreat Flyer">
       <img class="poststyle" src="Events\creol prayer service flyer.jpg" alt="Creol Prayer Service Flyer">
+      <a target=_blank href="https://docs.google.com/forms/d/e/1FAIpQLSdREo0cy44jHh3Sg97-xwo85jSSET-Q9oFcDsVre630JfzMQQ/viewform">
+      <img class="poststyle" src="Events\Youthe Fellowship Event Flyer.jpeg" alt="Youth Fellowship Event Flyer">
+      </a>
+      <img class="poststyle" src="Events\intercessory prayers.jpeg" alt="Intercessory Prayers Flyer">
   </div>
 
     </div>
@@ -361,12 +387,6 @@
             </p> 
             <p style="line-height: 2; text-align: center;">
 
-               <b>Retiro en ESPAÑOL</b>
-                <br>
-                Abril 23, 24 y 25: Retiro Espiritual de 3 días  en ESPAÑOL
-                llamen  (973) 864-4689  para registrarse.
-                <br>
-
                 <b>St. Joseph's Virtues RETREAT in English</b>
                 <br>
                 April 30, MAY 1 & 2  
@@ -396,16 +416,6 @@
     
     </div>
     </div>
-
-  <div id="containernew">
-    <div id="main">
-
-    </div>
-    </div>
-
-    <footer id="footer">
-
-    </footer>
 
   <script>
     console.log("%cContact schery004@gmail.com to report issues with the website.", "color:red; font-size:25px;");
