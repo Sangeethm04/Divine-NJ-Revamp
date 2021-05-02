@@ -95,8 +95,8 @@
 
         @media screen and (max-width: 600px) {
             .posts1 {
-                width: 108%;
-                transform: translate(5.5%);
+                width: 110%;
+                transform: translate(3.5%);
                 margin-top: -2.8%;
             }
 
@@ -105,30 +105,11 @@
             }
         }
 
-                /*Logo*/
-
-         #content2 {
-          position: relative;
-      }
-      #content2 img {
-          position: absolute;
-          top: -32px;
-          right: -25px;
-          width: 250px;
-      }
-
-      /*@media screen and (max-width: 900px) {
-      .log{
-      visibility:visible;
-      }
-      }*/
-
       .poststyle {
     margin-top: 5px; 
     height: auto; 
     width:90%;
     border-radius: 8px;
-    /*transform: translate(20%, 0%);*/
     margin-left:5%;
     margin-right:95%;
     border: 5px solid black;
@@ -183,10 +164,12 @@ html, body {
     font-family: 'PT Serif', serif;
   }
 
-  a:visited {
-    text-decoration:none;
-  }
       
+  a {
+  text-decoration: none;
+  color:black;
+}
+
         </style>
 
 
@@ -202,12 +185,11 @@ html, body {
           <!--Header-->
        <div class="head" data-role="header" >
           <h1 class="mainbibleverse">I am the Lord who heals you (Exodus 15:26)</h1>
-        <div class="log"id="content2">
-          <a href="/">
-            <img src="Assets/Divine Logo Crown.png"/>
-          </a>
-        </div>
-  
+          
+          <a class="logonew"href="/">
+          <img style="position:relative; width:250px; float:right; top:-32px; right:-30px;  margin-bottom: -30%;" src="Assets/Divine Logo Crown.png">
+         </a>
+     
           <h1 class="maintext"style="font-family: 'Diplomata SC', cursive; font-family: 'Girassol', cursive; text-align: center; margin-top: 0.7%; font-size:50px">Divine Mercy Healing Center</h1>
           <h2 class="maintext"style="text-align: center; margin-top: -40px;">(a.k.a., Divine Prayer Center)</h2>
           
@@ -381,15 +363,14 @@ html, body {
               </h1>
               <p style="color: brown; text-align: center;"> 
                 <b>DIVINE ARISING: YOUTH FELLOWSHIP EVENING</b><br>  
-                <!--<a class="signup" target="_blank" href='https://docs.google.com/forms/d/e/1FAIpQLSdREo0cy44jHh3Sg97-xwo85jSSET-Q9oFcDsVre630JfzMQQ/viewform'>Sign Up</a>-->
-                <a target="_blank" href='https://www.signupgenius.com/go/10c0d4aaca928a4f5c52-pentecost' class="newbutton" target=_blank>Signup</a>
+                <a target="_blank" href='https://docs.google.com/forms/d/e/1FAIpQLSdREo0cy44jHh3Sg97-xwo85jSSET-Q9oFcDsVre630JfzMQQ/viewform' class="newbutton" target=_blank>Signup</a>
              </p>
              <hr>
   
               <p style="color: brown; text-align: center;"> 
                   <b>Pentecost - Morning Prayer Chain</b><br>  
-                  <div class="cont2">
-                  <a style="transform: translate(0px 100px);"target="_blank" href='https://www.signupgenius.com/go/10c0d4aaca928a4f5c52-pentecost' class="newbutton" target=_blank>Signup</a>
+                  <div style="margin-top:-10px; margin-bottom:-10px;" class="cont2">
+                  <a target="_blank" href='https://www.signupgenius.com/go/10c0d4aaca928a4f5c52-pentecost' class="newbutton" target=_blank>Signup</a>
                   </div>
                </p>
                <hr>
@@ -418,7 +399,7 @@ html, body {
                   April 30, MAY 1 & 2  
                   <br>
   
-                  <!--<a class="signup" target="_blank" href='form.html'>Sign Up</a>-->
+                
            </p>
   
            <p style="text-align: center;">
@@ -445,12 +426,12 @@ html, body {
       </div>
     </div>
 
-    <footer id="footer">
+    <footer style="text-decoration: none;"id="footer">
     <hr>
-    <p><a class="text-decoration:none;" target=_blank href="https://www.google.com/maps?ll=40.749721,-75.010506&z=15&t=m&hl=en&gl=US&mapclient=embed&cid=1481280193983793938">426 State Route 57 W,
-      Washington, NJ 07882</a> |  <a class="text-decoration:none;" target=_blank href="https://www.google.com/maps?ll=40.682254,-75.213156&z=19&t=m&hl=en&gl=US&mapclient=embed&cid=9965414566934173152">131 Davis St,
-        Easton, PA 18042</a></p>
-        <p>Phone: (908) 835-9989        |       Email: dmhcnj@gmail.com     |    <a class="text-decoration:none;" href="contact.html">Contact</a>  </p>
+    <p><a class="text-decoration:underline;" target=_blank href="https://www.google.com/maps?ll=40.749721,-75.010506&z=15&t=m&hl=en&gl=US&mapclient=embed&cid=1481280193983793938"><u>426 State Route 57 W,
+      Washington, NJ 07882</u></a> |  <a class="text-decoration:none;" target=_blank href="https://www.google.com/maps?ll=40.682254,-75.213156&z=19&t=m&hl=en&gl=US&mapclient=embed&cid=9965414566934173152"><u>131 Davis St,
+        Easton, PA 18042</u></a></p>
+        <p>Phone: (908) 835-9989        |       Email: dmhcnj@gmail.com     |    <a class="text-decoration:none;" href="contact.html"><u>Contact</u></a>  </p>
       <p>&copy;2021 by Divine Mercy Healing Center.</p>
     </footer>
 
