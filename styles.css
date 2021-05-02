@@ -9,7 +9,7 @@ body {
 /* Add a background color to the top navigation */
 .topnav {
   background-color: rgba(4, 114, 240, 0.753);
-  overflow-y: hidden;
+  overflow: hidden;
   border-radius: 5px;
   align-items: center;
 }
@@ -22,26 +22,22 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px; 
-  overflow-y: hidden;
 }
 
 .topnav-right {
   float: right;
-  overflow-y: hidden;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
-  overflow-y: hidden;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: #d34419;
   color: white;
-  overflow-y: hidden;
 }
 
 /*Navigation Bar for testimony page*/
@@ -264,8 +260,8 @@ body {
     .poststyle {
         margin-top: 8px; 
         height: auto; 
-        width:80%;
-        transform: translate(1%);
+        width:90%;
+        transform: translate(-5%);
         border-radius: 8px;
         margin-left:0%;
         margin-right:0%;
@@ -274,69 +270,8 @@ body {
   
   }
 
-  /*New Button*/
-  .cont2 {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-  }
 
-  .newbutton {
-    width: 65px;
-    height: 50px;
-    border: none;
-    color: white;
-    background-color: #19b9be;
-    border-radius: 4px;
-    box-shadow: inset 0 0 0 0 #f9e506;
-    transition: ease-out 0.3s;
-    font-size: 1rem;
-    outline:none;
-    cursor:pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    margin:0 auto;
-      
-  }
-
-  .newbutton:hover {
-    box-shadow: inset 100px 0 0 0 #f9e506;
-  }
-
-  /*Sign Up Button*/
-    .saintspeaks {
-    background-color: #19b9be; /* Green */
-    box-shadow: inset 0 0 0 0 #f9e506;
-    transition: ease-out 0.8s;
-    color: white;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    border-radius: 5px;
-    height: auto;
-    margin-top: 5px;
-    width: 100%;
-    
-      }
-  
-  .saintspeaks:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
-    box-shadow: inset 400px 0 0 0 #f9e506;
-    
-  } 
-
-  
- /*Sign Up Button OLD*/
+ /*Sign Up Button*/
   .signup {
     background-color: #4c98af; /* Green */
     border: none;
@@ -472,6 +407,24 @@ body {font-family: "Lato", sans-serif;}
 
   /*Articles styling page done*/
 
+  .fa {
+    font-size: xx-large;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    margin-right: 3px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-youtube {
+  color: white;
+  font-size: small;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .testtext {
   text-align: center;
@@ -530,6 +483,27 @@ body {font-family: "Lato", sans-serif;}
   background: #dad8d8; 
 }
 
+         /*Sign Up Button*/
+       .saintspeaks {
+          background-color: #19b9be; /* Green */
+          color: white;
+          padding: 10px 15px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          cursor: pointer;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          border-radius: 5px;
+          height: auto;
+          margin-top: 10px;
+          width: 100%;
+            }
+        
+        .saintspeaks:hover{
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
+        } 
 
         /*Logo*/
 
@@ -544,7 +518,7 @@ body {font-family: "Lato", sans-serif;}
       }
 
       @media screen and (max-width: 900px) {
-      .logonew{
+      .log{
       visibility: hidden;
       }
       }
