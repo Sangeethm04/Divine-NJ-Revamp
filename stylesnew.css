@@ -539,21 +539,21 @@ body {font-family: "Lato", sans-serif;}
 
 
         /*Logo*/
+        .containernew {
+          position:relative;
+        }
 
-        #content2 {
-          position: relative;
-      }
-      #content2 img {
-          position: absolute;
-          top: -32px;
-          right: -25px;
-          width: 250px;
-      }
 
       @media screen and (max-width: 900px) {
       .logonew{
       visibility: hidden;
       }
+    }
+
+      @media screen and (max-width: 490px) {
+        .maintext5 {
+          text-align:center;
+          margin-right: 20%;
+          margin-left:50%;
+        }
       }
-
-
