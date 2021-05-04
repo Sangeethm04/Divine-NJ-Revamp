@@ -550,10 +550,9 @@ body {font-family: "Lato", sans-serif;}
       }
     }
 
-      @media screen and (max-width: 490px) {
+      @media screen and (max-width: 600px) {
         .maintext5 {
           text-align:center;
-          margin-right: 20%;
-          margin-left:50%;
+          margin-right: -100%;
         }
       }
