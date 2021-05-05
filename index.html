@@ -12,26 +12,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Girassol&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H3VRV8J4HW"></script>
-    <script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-H3VRV8J4HW"></script>
+      <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-H3VRV8J4HW');
-    </script>
+      </script>
 
     <style>
-
-    html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-    }
-        * {
-          box-sizing: border-box; 
-        }
-        
         /* Create three equal columns that floats next to each other */
         .column1 {
           float: left;
@@ -68,7 +62,7 @@
         }
         
         /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 700px) {
           .row{
             display: grid;
             grid-template-columns: 100%; 
@@ -102,40 +96,21 @@
 
         @media screen and (max-width: 600px) {
             .posts1 {
-                width: 108%;
-                transform: translate(5.5%);
+                width: 120%;
+                transform: translate(1%);
                 margin-top: -2.8%;
             }
 
             #c {
-              width: 93%;
+              width: 94%;
             }
         }
-
-                /*Logo*/
-
-         #content2 {
-          position: relative;
-      }
-      #content2 img {
-          position: absolute;
-          top: -32px;
-          right: -25px;
-          width: 250px;
-      }
-
-      /*@media screen and (max-width: 900px) {
-      .log{
-      visibility:visible;
-      }
-      }*/
 
       .poststyle {
     margin-top: 5px; 
     height: auto; 
     width:90%;
     border-radius: 8px;
-    /*transform: translate(20%, 0%);*/
     margin-left:5%;
     margin-right:95%;
     border: 5px solid black;
@@ -154,7 +129,75 @@
     }
   
   }
+
+  
+* {
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+html, body {
+  position:relative;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  }
+
+  #containernew {
+    min-height: 100%;
+    overflow: hidden;
+  }
+
+  #main {
+    overflow: hidden;
+    padding-bottom:2%;
+  }
+
+  #footer {
+    background-color: #ffffff;
+    position:relative;
+    height:auto;
+    margin-top:-100;
+    color:rgb(0, 0, 0);
+    text-align:center;
+    overflow: hidden;
+    text-decoration:none;
+    font-family: 'PT Serif', serif;
+  }
+
       
+  a {
+  text-decoration: none;
+  color:black;
+}
+
+  /*Sign Up Button*/
+  .saintspeaks {
+    background-color: #19b9be; /* Green */
+    box-shadow: inset 0 0 0 0 #f9e506;
+    transition: ease-out 0.8s;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    height: auto;
+    margin-top: 5px;
+    width: 100%;
+    
+      }
+  
+  .saintspeaks:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
+    box-shadow: inset 400px 0 0 0 #f9e506;
+    
+  } 
+
         </style>
 
 
@@ -162,249 +205,305 @@
 
 <link rel="stylesheet" href="styles.css">
 
-<body style="background-color: rgb(255, 255, 255); overflow-x: hidden;">
-        <!--Header-->
-     <div class="head" data-role="header" >
-        <h1 class="mainbibleverse">I am the Lord who heals you (Exodus 15:26)</h1>
-      <div class="log"id="content2">
-        <a href="/">
-          <img src="Assets/Divine Logo Crown.png"/>
-        </a>
-      </div>
 
-        <h1 class="maintext5"style="font-family: 'Diplomata SC', cursive; font-family: 'Girassol', cursive; text-align: center; margin-top: 0.7%; font-size:50px">Divine Mercy Healing Center</h1>
-        <h2 class="maintext"style="text-align: center; margin-top: -40px;">(a.k.a., Divine Prayer Center)</h2>
-        
-     </div>
-        <!--Tabs-->
-    <div class="topnav">
-        <a  class="active" href="/">Home</a>
-        <a  href="ministries.html">Ministries</a>
-        <a  href="testimony.html">Testimonies</a>
-        <a  href="articles.html">Articles</a>
-        <a  href="contact.html">Contact</a>
-        <div class="topnav-right">
-          <div id="donate"> 
-            
-            <form  target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick" />
-                <input type="hidden" name="hosted_button_id" value="PASK8874AB2CN" />
-                <input type="image" src="Donate-button.png" style="float:right; width:auto; height: 45px; transform: translate(0, 1px); object-fit: contain;" name="submit" title="PayPal" alt="Donate with PayPal button"/>
-            </form>
-        </div>   
 
-        </div>
-</div>
     
-<div class="row">
-    <div id="a"class="column1" style="background: #eee; margin-top: 10px; border-radius: 8px; padding: 4px 8px 6px 16px; box-shadow: 5px 10px 8px #888888;">
-        <div>
-            <h1 style="text-align: center; font-size: 25px; background-color: brown; padding: 0%; color: white;">
-                Schedule
-            </h1>
-            <p style="color: brown; text-align: center;"> 
-                Monday thru Friday
-             </p>
-             <p style="text-align: center;">
-                5:30 PM: Exp. of Eucharist & Holy Rosary
-                <br>
-                6:30 PM: Holy MASS & Healing Adoration
-             </p>
-             <hr>
-             <p style="color: brown; text-align: center;">
-                First Friday Services: Devotion to the Sacred Heart of JESUS 
-                </p>
-                <p style="text-align: center;">
-                  4:30 PM: Exp. of Eucharist, Rosary, Hymns, Reflection, Sacred Heart Prayers 
-                <br>
-                  6:30 PM: Holy MASS & Healing Adoration
-             </p>
-             <hr>
-             <p style="color: brown; text-align: center;">
-                Saturday
-             </p>
-             <p style="text-align: center;">
-                12:30 PM thru 5 PM
-                <br>
-                Healing Prayer Service <br>
-                Includes Rosary, Praise & Worship, Songs, <br>
-                Preaching Session, Holy MASS & Healing Adoration 
-            </p>
-            <hr>
-            <p style="color: brown; text-align: center;">
-                2nd SATurday of the Month
-             </p>   
-             <p style="text-align: center;">
-                12 PM to 5:30 PM: 
-                Healing Prayer Service in 'Malayalam'
-                </p>
-                <hr>
-                <p style="color: brown; text-align: center;">
-                Sunday
-                </p>
-                <p style="text-align: center;">
-                11:00 AM: Exp. of Eucharist & Rosary 
-                <br>
-                11:30 AM: Holy MASS
-        </p>  
-        <a class="youtube" target="_blank" href='https://www.youtube.com/channel/UCnxcnQtQv7EVis2MImW0Gjw'><b>YouTube Channel</b></a>
-        </div>
-          
-        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/9V2PwITKSdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="border-radius:5px;" allowfullscreen></iframe>
-
-        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/K2t1wbgcDpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="border-radius:5px;" allowfullscreen></iframe>
-
-        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/bzdgghRC1Qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="border-radius:5px;" allowfullscreen></iframe>
-
-    </div>
-    <div id="b" class="column2" style="margin: 2px; ">
-    <!--Slideshow-->
-    <div class="slideshow-container">
-
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 11</div>
-          <img alt="Easter Slide Image 1" src="easter slides\DivineMercy-msg.png" style="width:100%">
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 11</div>
-          <img alt="Easter Slide Image 2" src="easter slides\Easter-msg.png" style="width:100%">
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 11</div>
-          <img alt="Easter Slide Image 3" src="easter slides\General-Slides1.png" style="width:100%">
-        </div>
-  
-        <div class="mySlides fade">
-          <div class="numbertext">4 / 11</div>
-          <img alt="Easter Slide Image 4" src="easter slides\General-Slides2.png" style="width:100%">
-        </div>
-  
-        <div class="mySlides fade">
-          <div class="numbertext">5 / 11</div>
-          <img alt="Easter Slide Image 5" src="easter slides\General-Slides3.png" style="width:100%">
-        </div>
-  
-        <div class="mySlides fade">
-          <div class="numbertext">6 / 11</div>
-          <img alt="Easter Slide Image 5" src="easter slides\General-Slides4.png" style="width:100%">
-        </div>
-  
-        <div class="mySlides fade">
-          <div class="numbertext">7 / 11</div>
-          <img alt="Easter Slide Image 6" src="easter slides\Heal-Me-Lord.png" style="width:100%">
-        </div>
-  
-        <div class="mySlides fade">
-          <div class="numbertext">8 / 11</div>
-          <img alt="Easter Slide Image 7" src="easter slides\HolySpirit-msg1.jpg" style="width:100%">
-        </div>
-  
-        <div class="mySlides fade">
-          <div class="numbertext">9 / 11</div>
-          <img alt="Easter Slide Image 8" src="easter slides\HolySpirit-msg2.jpg" style="width:100%">
-        </div>
-  
-        <div class="mySlides fade">
-          <div class="numbertext">10 / 11</div>
-          <img alt="Easter Slide Image 9" src="easter slides\HolySpirit-msg3.jpg" style="width:100%">
-        </div>
-  
-        <div class="mySlides fade">
-          <div class="numbertext">11 / 11</div>
-          <img alt="Easter Slide Image 10" src="easter slides\HolySpirit-msg4.jpg" style="width:100%">
-        </div>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-        </div>
       
-      <!--Slideshow end-->
+        <body style="background-color: rgb(255, 255, 255); overflow-x: hidden;">
+          <!--Header-->
 
-      <div style="margin-top: 5px; margin-bottom: 5px; overflow-x: hidden;">
-        <h2 style="background-color: rgb(219, 218, 218); text-align:center; border-radius: 6px; margin-bottom: 5px; margin-top: 5px; padding: 5px; font-family: 'Kiwi Maru', serif;">Event Flyers</h2>
-      </div>
-  
-  <div class="posts1">
-
-      <img class="poststyle" src="Events\creol prayer service flyer.jpg" alt="Creol Prayer Service Flyer">
-      <img class="poststyle"  src="Events/Spanish Service.jpeg" alt="Divine Mercy Sunday Feast Flyer">
         
+        <div id="containernew">
+       <div class="head" data-role="header" >
+          <h1 class="mainbibleverse">I am the Lord who heals you (Exodus 15:26)</h1>
+          
+          <a class="logonew"href="/">
+          <img style="width:250px; position:relative; float:right; top:-35px; right:-28px;  margin-bottom: -30%; z-index:2;" src="Assets/Divine Logo Crown.png">
+         </a>
+       
+          <h1 class="maintext5"style="font-family: 'Diplomata SC', cursive; font-family: 'Girassol', cursive; text-align: center; margin-top: 0.7%; font-size:50px;">Divine Mercy Healing Center</h1>
+          <h2 class="maintext"style="text-align: center; margin-top: -40px;">(a.k.a., Divine Prayer Center)</h2>
+          
+       
 
-  </div>
-
+          <!--Tabs-->
+      <div class="topnav">
+          <a  class="active" href="/">Home</a>
+          <a  href="ministries.html">Ministries</a>
+          <a  href="testimony.html">Testimonies</a>
+          <a  href="articles.html">Articles</a>
+          <a  href="contact.html">Contact</a>
+          <div class="topnav-right">
+            <div id="donate"> 
+              
+              <form  target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input type="hidden" name="hosted_button_id" value="PASK8874AB2CN" />
+                  <input type="image" src="Donate-button.png" style="float:right; width:auto; height: 45px; transform: translate(0, 0px); object-fit: contain; overflow: hidden;" name="submit" title="PayPal" alt="Donate with PayPal button"/>
+              </form>
+          </div>   
+  
+        </div>
     </div>
 
-    <div id="c"class="column3" >
-        <div style="background: #eee; margin-top: 0px; border-radius: 8px; padding: 4px 8px 6px 16px; box-shadow: 5px 10px 8px #888888;">
-            <h1 style="text-align: center; font-size: 25px; background-color: brown; color: white;">
-                Events
-            </h1>
-
-            <p style="color: brown; text-align: center;"> 
-                <b>Pentecost - Morning Prayer Chain</b><br>  
-                <a class="signup" target="_blank" href='https://www.signupgenius.com/go/10c0d4aaca928a4f5c52-pentecost'>Sign Up</a>
-             </p>
-             <hr>
-             <p style="color: brown; text-align: center;">
-              First Saturday YOUTH FELLOWSHIP<br>(via Zoom Video Conference) 
-            </p>
+      <div id="main">
+  <div class="row">
+      <div id="a"class="column1" style="background: #eee; margin-top: 10px; border-radius: 8px; padding: 4px 8px 6px 16px; box-shadow: 5px 10px 8px #888888;">
+          <div>
+              <h1 style="text-align: center; font-size: 25px; background-color: brown; padding: 0%; color: white;">
+                  Schedule
+              </h1>
+              <p style="color: brown; text-align: center;"> 
+                  Monday thru Friday
+               </p>
                <p style="text-align: center;">
-                5:30 PM to 7:30 PM
-             </p> 
-             <hr>
-             <p style="color: brown; text-align: center;">
-              First Sunday Spanish Prayer Service
-                </p>
-                <p style="text-align: center;">
-                  1 PM Thru 5 PM
+                  5:30 PM: Exp. of Eucharist & Holy Rosary
+                  <br>
+                  6:30 PM: Holy MASS & Healing Adoration
+               </p>
+               <hr>
+               <p style="color: brown; text-align: center;">
+                  First Friday Services: Devotion to the Sacred Heart of JESUS 
+                  </p>
+                  <p style="text-align: center;">
+                    4:30 PM: Exp. of Eucharist, Rosary, Hymns, Reflection, Sacred Heart Prayers 
+                  <br>
+                    6:30 PM: Holy MASS & Healing Adoration
+               </p>
+               <hr>
+               <p style="color: brown; text-align: center;">
+                  Saturday
+               </p>
+               <p style="text-align: center;">
+                  12:30 PM thru 5 PM
+                  <br>
+                  Healing Prayer Service <br>
+                  Includes Rosary, Praise & Worship, Songs, <br>
+                  Preaching Session, Holy MASS & Healing Adoration 
               </p>
               <hr>
-             <p style="color: brown; text-align: center;">
-                ONLINE 'Video' Conference RETREATS: 
-                <br>
-            </p> 
-            <p style="line-height: 2; text-align: center;">
+              <p style="color: brown; text-align: center;">
+                  2nd SATurday of the Month
+               </p>   
+               <p style="text-align: center;">
+                  12 PM to 5:30 PM: 
+                  Healing Prayer Service in 'Malayalam'
+                  </p>
+                  <hr>
+                  <p style="color: brown; text-align: center;">
+                  Sunday
+                  </p>
+                  <p style="text-align: center;">
+                  11:00 AM: Exp. of Eucharist & Rosary 
+                  <br>
+                  11:30 AM: Holy MASS
+          </p>  
+          <a class="youtube" target="_blank" href='https://www.youtube.com/channel/UCnxcnQtQv7EVis2MImW0Gjw'><b>YouTube Channel</b></a>
+          </div>
+            
+          <iframe width="100%" height="300px" src="https://www.youtube.com/embed/9V2PwITKSdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="border-radius:5px;" allowfullscreen></iframe>
+  
+          <iframe width="100%" height="300px" src="https://www.youtube.com/embed/K2t1wbgcDpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="border-radius:5px;" allowfullscreen></iframe>
+  
+          <iframe width="100%" height="300px" src="https://www.youtube.com/embed/bzdgghRC1Qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="border-radius:5px;" allowfullscreen></iframe>
+  
+      </div>
+      <div id="b" class="column2" style="margin: 2px; ">
+      <!--Slideshow-->
+      <div class="slideshow-container">
+  
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 11</div>
+            <img alt="Easter Slide Image 1" src="easter slides\DivineMercy-msg.png" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 11</div>
+            <img alt="Easter Slide Image 2" src="easter slides\Easter-msg.png" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 11</div>
+            <img alt="Easter Slide Image 3" src="easter slides\General-Slides1.png" style="width:100%">
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 11</div>
+            <img alt="Easter Slide Image 4" src="easter slides\General-Slides2.png" style="width:100%">
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 11</div>
+            <img alt="Easter Slide Image 5" src="easter slides\General-Slides3.png" style="width:100%">
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 11</div>
+            <img alt="Easter Slide Image 5" src="easter slides\General-Slides4.png" style="width:100%">
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 11</div>
+            <img alt="Easter Slide Image 6" src="easter slides\Heal-Me-Lord.png" style="width:100%">
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 11</div>
+            <img alt="Easter Slide Image 7" src="easter slides\HolySpirit-msg1.jpg" style="width:100%">
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext">9 / 11</div>
+            <img alt="Easter Slide Image 8" src="easter slides\HolySpirit-msg2.jpg" style="width:100%">
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext">10 / 11</div>
+            <img alt="Easter Slide Image 9" src="easter slides\HolySpirit-msg3.jpg" style="width:100%">
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext">11 / 11</div>
+            <img alt="Easter Slide Image 10" src="easter slides\HolySpirit-msg4.jpg" style="width:100%">
+          </div>
+          
+          </div>
+          <br>
+      
+        
+        <!--Slideshow end-->
+  
+        <div style="margin-top: 5px; margin-bottom: 5px; overflow-x: hidden;">
+          <h2 style="background-color: rgb(219, 218, 218); text-align:center; border-radius: 6px; margin-bottom: 5px; margin-top: 5px; padding: 5px; font-family: 'Kiwi Maru', serif;">Event Flyers</h2>
+        </div>
+    
+    <div class="posts1">
+        <img class="poststyle" src="Events\creol prayer service flyer.jpg" alt="Creol Prayer Service Flyer">
+    </div>
+  
+      </div>
+  
+      <div id="c"class="column3" >
+          <div style="background: #eee; margin-top: 0px; border-radius: 8px; padding: 4px 8px 6px 16px; box-shadow: 5px 10px 8px #888888;">
+              <h1 style="text-align: center; font-size: 25px; background-color: brown; color: white;">
+                  Events
+              </h1>
+  
+              <p style="color: brown; text-align: center;"> 
+                  <b>Pentecost - Morning Prayer Chain</b><br>  
+                  <div style="margin-top:-10px; margin-bottom:-10px;" class="cont2">
+                  <a target="_blank" href='https://www.signupgenius.com/go/10c0d4aaca928a4f5c52-pentecost' class="newbutton" target=_blank>Signup</a>
+                  </div>
+               </p>
+               <hr>
+               <p style="color: brown; text-align: center;">Healing Service in Creol</p>
 
+               <p style="text-align: center;">
+                 Sunday May 9th<br>1PM Until 5PM
+               </p>
+
+               <hr>
+
+               <p style="color: brown; text-align: center;">Healing Service in Polish</p>
+
+               <p style="text-align: center;">
+                 Sunday May 16th<br>1PM Until 5PM
+               </p>
+
+               <hr>
+
+               <p style="color: brown; text-align: center;">
+                Pentecost Night Vigil
+              </p>
+
+                 <p style="text-align: center;">
+                  May 22 - 9:30PM thru 2:00AM
+               </p> 
+
+               <hr>
+
+               <p style="color: brown; text-align: center;">
+                First Saturday YOUTH FELLOWSHIP<br>(via Zoom Video Conference) 
+
+              </p>
+                 <p style="text-align: center;">
+                  5:30 PM to 7:30 PM
+               </p> 
+
+               <hr>
+
+               <p style="color: brown; text-align: center;">
+                First Sunday Spanish Prayer Service
+                  </p>
+
+                  <p style="text-align: center;">
+                    1 PM Thru 5 PM
+                </p>
+
+                <hr>
+
+               <p style="color: brown; text-align: center;">
+                  ONLINE 'Video' Conference RETREATS: 
+                  <br>
+              </p> 
+
+              <p style="line-height: 2; text-align: center;">
+  
                 <b>Online Telengu Retreat</b>
                 <br>
                 MAY 14, 15, 16  
                 <br>
+                USA: (908) 835-9989 or (202) 644-3172 <br>
+                India: +91-8919553901 or +91-8179927903
+                <br>
 
+                <b>Retiro Online En Espanol</b>
+                <br>
+                18, 19 y 20 de Junio<br>
+                Registrarse: (973) 864-4689
+                <br>
                 <b>Online Deliverance Retreat</b>
                 <br>
                 May 28, 29, 30, 31
                 <br>
                 
-         </p>
-
-         <p style="text-align: center;">
-          <b>Please call us at <br>(908) 835-9989 to Register</b>
-         </p>
-        </div>
-        
-        <div>
-
-          <a class="saintspeaks" target="_blank" href='saintsspeak.html'><b>Saint Speak</b></a>
-
-        </div>
-
-        <div>
-
-          <a class="saintspeaks" target="_blank" href='newchurch.html'><b>Easton Center Consecration</b></a>
-
-        </div>
+           </p>
+  
+           <p style="text-align: center;">
+            <b>Please call us at <br>(908) 835-9989 to Register</b>
+           </p>
+          </div>
           
-        
-    
+          <div>
+  
+            <a class="saintspeaks" target="_blank" href='saintsspeak.html'><b>Saint Speak</b></a>
+  
+          </div>
+  
+          <div>
+  
+            <a class="saintspeaks" target="_blank" href='newchurch.html'><b>Easton Center Consecration</b></a>
+  
+          </div>
+            
+          <!--<footer id="footer" data-role="footer">
+                <h1> Copyright &copy; Sangeeth <script> document.write(new Date().getFullYear())</script></h1>
+            </footer> -->
+      
+      </div>
+      </div>
+      </div>
     </div>
-    </div>
+</div> 
+    <footer style="text-decoration: none;"id="footer">
+    <hr>
+    <p><a class="text-decoration:underline;" target=_blank href="https://www.google.com/maps?ll=40.749721,-75.010506&z=15&t=m&hl=en&gl=US&mapclient=embed&cid=1481280193983793938"><u>426 State Route 57 W,
+      Washington, NJ 07882</u></a> |  <a class="text-decoration:none;" target=_blank href="https://www.google.com/maps?ll=40.682254,-75.213156&z=19&t=m&hl=en&gl=US&mapclient=embed&cid=9965414566934173152"><u>131 Davis St,
+        Easton, PA 18042</u></a></p>
+        <p>Phone: (908) 835-9989        |       Email: dmhcnj@gmail.com     |    <a class="text-decoration:none;" href="contact.html"><u>Contact</u></a>  </p>
+      <p>&copy;<script> document.write(new Date().getFullYear())</script> by Divine Mercy Healing Center.</p>
+    </footer>
+ 
 
   <script>
     console.log("%cContact schery004@gmail.com to report issues with the website.", "color:red; font-size:25px;");
