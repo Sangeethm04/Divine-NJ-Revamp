@@ -572,3 +572,17 @@ body {font-family: "Lato", sans-serif;}
       visibility: hidden;
       }
     }
+
+    
+/*Footer*/
+    #footer {
+      background-color: #ffffff;
+      position:relative;
+      height:auto;
+      margin-top:-100;
+      color:rgb(0, 0, 0);
+      text-align:center;
+      overflow: hidden;
+      text-decoration:none;
+      font-family: 'PT Serif', serif;
+    }
