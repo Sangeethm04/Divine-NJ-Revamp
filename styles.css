@@ -570,6 +570,7 @@ body {font-family: "Lato", sans-serif;}
       @media screen and (max-width: 900px) {
       .logonew{
       visibility: hidden;
+      display:none;
       }
     }
 
