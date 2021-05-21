@@ -587,3 +587,12 @@ body {font-family: "Lato", sans-serif;}
       text-decoration:none;
       font-family: 'PT Serif', serif;
     }
+
+    #main {
+      overflow: hidden;
+      padding-bottom:2%;
+    }
+
+    /*End of Footer*/
+
+  
