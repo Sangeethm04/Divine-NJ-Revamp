@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
     <!--PayPal Icon-->
     <script src="https://kit.fontawesome.com/6d2be967aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -257,7 +258,7 @@ html, body {
        
 
           <!--Tabs-->
-      <div class="topnav">
+      <div class="topnav" id="myTopnav">
           <a   href="/">Home</a>
           <a  class="active" href="about.html">About</a>
           <a  href="ministries.html">Ministries</a>
@@ -268,17 +269,12 @@ html, body {
           <div class="topnav-right">
 
             <a target=_blank style="width: auto; height: 48px; transform: translate(0px, 0.2px); background-color: #d34419;"class="fab fa-paypal" class="active" href="https://www.paypal.com/donate?hosted_button_id=PASK8874AB2CN">  <b>Donate</b></a>
-
-            <!--<div id="donate"> 
-              
-              <form  target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                  <input type="hidden" name="cmd" value="_s-xclick" />
-                  <input type="hidden" name="hosted_button_id" value="PASK8874AB2CN" />
-                  <input type="image" src="Donate-button.png" style="float:right; width:auto; height: 45px; transform: translate(0, 0px); object-fit: contain; overflow: hidden;" name="submit" title="PayPal" alt="Donate with PayPal button"/>
-              </form>
-          </div>  --> 
   
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+          <i class="fa fa-bars"></i>
+        </a>
+
     </div>
 
       <div id="main">
@@ -352,10 +348,7 @@ html, body {
       <p>&copy;<script> document.write(new Date().getFullYear())</script> by Divine Mercy Healing Center.</p>
     </footer>
  
-
-  <script>
-    console.log("%cContact schery004@gmail.com to report issues with the website.", "color:red; font-size:25px;");
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
