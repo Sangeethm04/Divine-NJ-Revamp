@@ -654,4 +654,11 @@ body {font-family: "Lato", sans-serif;}
 
     /*End of Footer*/
 
+    .youthretreat {
+      font-size: 18px;
+      background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(0, 38, 255));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
   
