@@ -652,15 +652,9 @@ body {font-family: "Lato", sans-serif;}
       padding-bottom:2%;
     }
 
-    /*End of Footer
+    /*End of Footer*/
 
-    .youthretreat {
-      font-size: 18px;
-      background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(0, 38, 255));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-*/
+
     .youthretreat {
   font-size: 20px;
   background: linear-gradient(45deg, #ff0000, #001aff);
