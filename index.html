@@ -79,7 +79,7 @@
           }
 
           #a {
-        transform: translate(0.5%, 0px);
+       
         order: 2; 
         width: 90%;
         margin: 0 auto;
@@ -94,17 +94,12 @@
         #c {
             
             order: 3;
-            width: 94%;
+            width: 90%;
             margin: 0 auto;
             margin-bottom: 10px;
         }
 
-        .column3 {
-          float: left;
-          width: 23%;
-          padding: 10px;
-          height: auto
-        }
+        
         }
 
         .posts1 {
@@ -227,6 +222,145 @@ html, body {
 .mySlides-fade img {
   border-radius: 9px;
   width: 100%;
+}
+
+/*FLYERS STYLES*/
+
+.rows55 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columns55 {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 0px;
+}
+
+.columns55 img {
+  margin-top: 3px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius:5px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columns55 {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columns55 {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.columns55 {
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.columns55 img {
+  opacity: 0.8;
+  cursor: pointer;
+  width: 100%;
+}
+
+.columns55 img:hover {
+  opacity: 1;
+}
+
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.containers55 {
+  position: relative;
+  display: none;
+  border-radius: 9px;
+}
+
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columns55 {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .rows55 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2px;
+}
+
+/* Create four equal columns that sits next to each other */
+
+.columns55 img {
+  margin-top: 5px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius:5px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+  .columns55 {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+/* The grid: Four equal columns that floats next to each other */
+.columns55 {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Style the images inside the grid */
+.columns55 img {
+  opacity: 1;
+  cursor: pointer;
+  width: 100%;
+  border: black 2px solid;
+}
+
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.containers55 {
+  position: relative;
+  display: none;
+}
+
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}  
 }
 
         </style>
@@ -406,6 +540,44 @@ html, body {
           <h2 style="background-color: rgb(255, 255, 255); text-align:center; border-radius: 6px; margin-bottom: 5px; margin-top: 5px; padding: 5px; font-family: 'Kiwi Maru', serif;">Event Flyers</h2>
         </div>
     
+
+        <!--NEW EVENT FLYERS -->
+        <!-- The grid: four columns -->
+<div class="rows55">
+  <div class="columns55">
+    <img src="Events\Telegu Retreat July 16-18,   2001.jpg" alt="Telegu Retreat July 16-18,   2001" onclick="myFunction(this);">
+  </div>
+  <div class="columns55">
+    <img src="Events\Divine_Tamil_Service_JULY_2.jpg" alt="Divine_Tamil_Service_JULY_2" onclick="myFunction(this);">
+  </div>
+  <div class="columns55">
+    <img src="Events\July 19-23 Religious Sisters Retreat.jpg" alt="July 19-23 Religious Sisters Retreat" onclick="myFunction(this);">
+  </div>
+  <div class="columns55">
+    <img src="Events\English Retreat July & August 2021.jpg" alt="English Retreat July & August 2021" onclick="myFunction(this);">
+  </div>
+  <div class="columns55">
+    <img src="Events\July 25 Creole Service Flyer.jpg" alt="Events\July 25 Creole Service Flyer.jpg" onclick="myFunction(this);">
+  </div>
+  <div class="columns55">
+    <img src="Events\August 2021 Youth retreat flyer Divine.jpg" alt="Events\August 2021 Youth retreat flyer Divine.jpg" onclick="myFunction(this);">
+  </div>
+  <div class="columns55">
+    <img src="Events\Spanish Retreat Flyer.jpeg" alt="Events\Spanish Retreat Flyer.jpeg" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="containers55">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%; border-radius: 8px;">
+
+</div>
+
+<!--
     <div class="posts1">
       <img class="poststyle" src="Events\Telegu Retreat July 16-18,   2001.jpg" alt="Telegu Retreat July 16-18,2021">
       <img class="poststyle" src="Events\Divine_Tamil_Service_JULY_2.jpg" alt="Divine_Tamil_Service_JULY_2">
@@ -416,7 +588,7 @@ html, body {
       <img class="poststyle" src="Events\Spanish Retreat Flyer.jpeg" alt="Spanish Retreat Flyer">
     
     </div>
-  
+  -->
       </div>
   
       <div id="c"class="column3" >
