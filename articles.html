@@ -76,7 +76,9 @@
 <body style="background-color: rgb(255, 255, 255); overflow-x: hidden;">
   <!--Header-->
 <div class="head" data-role="header" >
-  <h1 class="mainbibleverse">I am the Lord who heals you (Exodus 15:26)</h1>
+  <div style="margin-top: 10px;">
+    <h1 class="mainbibleverse" style="background-color: rgba(223, 222, 222, 0.411);">I am the Lord who heals you (Exodus 15:26)</h1>
+    </div>
   <div class="log"id="content2">
     <a class="logonew" href="/">
       <img style="width:250px; position:relative; float:right; top:-35px; right:-48px;  margin-bottom: -30%; z-index:2;"  src="Assets/Divine Logo Crown.png"/>
@@ -87,7 +89,7 @@
   
 </div>
   <!--Tabs-->
-<div class="topnav" id="myTopnav">
+  <div style="background-color: rgba(223, 222, 222, 0.411);" class="topnav" id="myTopnav">
   <a   href="/">Home</a>
   <a  href="about.html">About</a>
   <a  href="ministries.html">Ministries</a>
@@ -95,13 +97,14 @@
   <a  class="active" href="articles.html">Articles</a>
   <a  href="contact.html">Contact</a>
   <div class="topnav-right">
-    <a target=_blank style="width: auto; height: 48px; transform: translate(0px, 0.2px); background-color: #d34419;"class="fab fa-paypal" class="active" href="https://www.paypal.com/donate?hosted_button_id=PASK8874AB2CN">  <b>Donate</b></a>
+    <a id="donatebutton" target=_blank class="active" href="https://www.paypal.com/donate?hosted_button_id=PASK8874AB2CN">  <b>Donate</b></a>
 
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction2()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
+<div style="margin-top:10px;">
 <div id="main">
 <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'Weep')" id="defaultOpen">Why are you weeping?</button>
@@ -526,6 +529,7 @@
         <p>Phone: (908) 835-9989        |       Email: <a target="_blank" href="mailto:dmhcnj@gmail.com"><u>dmhcnj@gmail.com</u></a>     |    <a class="text-decoration:none;" href="contact.html"><u>Contact</u></a>  </p>
       <p>&copy;<script> document.write(new Date().getFullYear())</script> by Divine Mercy Healing Center.</p>
     </footer>
+</div>
     <script src="script.js"></script>
   <script>
   function openCity(evt, cityName) {
