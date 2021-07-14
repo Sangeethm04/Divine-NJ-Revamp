@@ -362,7 +362,7 @@ font-weight: bold;
     margin-top: 5px; 
     height: auto; 
     width:90%;
-    border-radius: 8px;
+    border-radius: 9px;
     /*transform: translate(20%, 0%);*/
     margin-left:5%;
     margin-right:95%;
@@ -431,7 +431,7 @@ font-weight: bold;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-    border-radius: 5px;
+    border-radius: 8px;
     height: auto;
     margin-top: 5px;
     width: 100%;
@@ -502,7 +502,7 @@ font-weight: bold;
       cursor: pointer;
       -webkit-transition-duration: 0.4s; /* Safari */
       transition-duration: 0.4s;
-      border-radius: 5px;
+      border-radius: 8px;
       width: 100%; 
       text-align: center;
     }
