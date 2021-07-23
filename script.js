@@ -26,6 +26,6 @@ function myFunction2() {
     // Use the same src in the expanded image as the image being clicked on from the grid
   expandedImg.src=imgs.src;
     // Show the container element (hidden with CSS)
-expandImg.parentElement.style.display="block"
+expandImg.parentElement.style.display="block";
   }
 

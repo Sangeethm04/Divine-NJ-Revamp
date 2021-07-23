@@ -735,3 +735,8 @@ body {font-family: "Lato", sans-serif;}
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
     }
+
+    a {
+      text-decoration: none;
+      color:black;
+    }
