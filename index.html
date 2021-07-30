@@ -269,6 +269,17 @@ html, body {
 }  
 }
 
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
         </style>
 
 
@@ -462,15 +473,18 @@ html, body {
   <div class="columns55">
     <img src="Events/August 13, 14, 15 Malayalam Retreat.jpg" alt="Malayalam Retreat Flyer.jpeg" onclick="myFunction(this);">
   </div>
+  <div class="columns55">
+    <img src="Events/WhatsApp Image 2021-07-30 at 11.53.52 AM.jpeg" alt="Spanish Retreat Flyer.jpeg" onclick="myFunction(this);">
+  </div>
 </div>
 
 <!-- The expanding image container -->
-<div style="transform: translate(0px, -70%)" class="containers55">
+<div  class="containers55">
   <!-- Close the image -->
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
   <!-- Expanded image -->
-  <img id="expandedImg" style="width:100%; border-radius: 8px;">
+  <img id="expandedImg" style="width:100%; border-radius: 8px; border-style:solid; border-color:black; border-width: 3px;">
 
 </div>
 
@@ -545,10 +559,16 @@ html, body {
        </p>
 
            <p style="line-height: 2; text-align: center;">
+            <b>Parents Retreat</b>
+            <br>
+            August 20, 21 & 22 <br>
+           </p>
+
+           <p style="line-height: 2; text-align: center;">
             <b>Retiro En Español</b>
             <br>
             20, 21 y 22 de Agosto <br>
-            Registrarse: (973) 864-4689
+Registrarse: (973) 864-4689 
            </p>
          
            <p style="text-align: center;">
@@ -604,6 +624,7 @@ html, body {
       slides[slideIndex-1].style.display = "block";  
       setTimeout(showSlides, 5000); // Change image every 5 seconds
     }
+
     </script>
 
 </body>
