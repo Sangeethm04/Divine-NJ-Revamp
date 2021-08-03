@@ -418,8 +418,8 @@ font-weight: bold;
   }
 
   .newbutton {
-    width: 65px;
-    height: 50px;
+    width: auto;
+    height: auto;
     border: none;
     color: white;
     background-color: #19b9be;
@@ -435,6 +435,7 @@ font-weight: bold;
     text-align: center;
     text-decoration: none;
     margin:0 auto;
+    padding: 12px;
       
   }
 
