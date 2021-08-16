@@ -11,7 +11,7 @@ var firebaseConfig = {
  firebase.initializeApp(firebaseConfig);
 
 // Reference messages collection
-var messagesRef = firebase.database().ref('messages');
+var messagesRef = firebase.database().ref('Testimonies');
 
 // Listen for form submit
 document.getElementById('contactForm').addEventListener('submit', submitForm);
@@ -22,13 +22,14 @@ function submitForm(e){
 
   // Get values
   var name = getInputVal('name');
-  var company = getInputVal('company');
+  var location = getInputVal('location');
   var email = getInputVal('email');
   var phone = getInputVal('phone');
   var message = getInputVal('message');
+  var sharing = getInputVal('sharing')
 
   // Save message
-  saveMessage(name, company, email, phone, message);
+  saveMessage(name, location, email, phone, message, sharing);
 
   // Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -36,7 +37,7 @@ function submitForm(e){
   // Hide alert after 3 seconds
   setTimeout(function(){
     document.querySelector('.alert').style.display = 'none';
-  },3000);
+  },15000);
 
   // Clear form
   document.getElementById('contactForm').reset();
@@ -48,47 +49,15 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveMessage(name, company, email, phone, message){
+function saveMessage(name, location, email, phone, message, sharing){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
     name: name,
-    company:company,
+    location:location,
     email:email,
     phone:phone,
-    message:message
-  });
-}
-
-
-/*Added Text*/
-function myFunction2() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-console.log("%cContact schery004@gmail.com to report issues with the website.", "color:red; font-size:25px;")
-
-function myFunction3() {
-  var x = document.getElementById("myTopnav5");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
- /*EVENT FLYERS SCRIPT*/
-
- function myFunction(imgs) {
-  // Get the expanded image
-  var expandImg = document.getElementById("expandedImg");
-  // Use the same src in the expanded image as the image being clicked on from the grid
-expandedImg.src=imgs.src;
-  // Show the container element (hidden with CSS)
-expandImg.parentElement.style.display="block";
+    message:message,
+    sharing:sharing
+  })
 }
 
