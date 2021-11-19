@@ -758,4 +758,53 @@ body {font-family: "Lato", sans-serif;}
       color:black;
     }
 
+
+    .updates {
+      padding:15px;
+      text-align: center; 
+      background-color: rgb(255, 255, 255); 
+      font-family: 'Castoro', serif;
+       font-size: medium;
+       border-bottom-left-radius: 8px;
+       border-bottom-right-radius: 8px;
+       color:rgb(255, 0, 0);
+       font-weight: bold;
+    }
+    
+    .updates a{
+      text-align: center; 
+      background-color: rgb(255, 255, 255); 
+      font-family: 'Castoro', serif;
+       font-size: medium;
+       border-bottom-left-radius: 8px;
+       border-bottom-right-radius: 8px;
+       color:rgb(255, 0, 0);
+       font-weight: bold;
+    }
+    
+    @media screen and (max-width: 890px) {
+      .updates{
+      padding:5px;
+      text-align: center; 
+      background-color: rgb(255, 255, 255); 
+      font-family: 'Castoro', serif;
+       font-size: medium;
+       border-bottom-left-radius: 8px;
+       border-bottom-right-radius: 8px;
+       color:rgb(255, 0, 0);
+       font-weight: bold;
+    }
+    
+    .updates a{
+      text-align: center; 
+      background-color: rgb(255, 255, 255); 
+      font-family: 'Castoro', serif;
+       font-size: medium;
+       border-bottom-left-radius: 8px;
+       border-bottom-right-radius: 8px;
+       color:rgb(255, 0, 0);
+       font-weight: bold;
+    }
+    }
+
    
