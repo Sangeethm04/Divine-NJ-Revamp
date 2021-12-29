@@ -7,8 +7,8 @@ var firebaseConfig = {
   messagingSenderId: "705545618281",
   appId: "1:705545618281:web:92a9bf8211579b83d673f8",
 };
- // Initialize Firebase
- firebase.initializeApp(firebaseConfig);
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('Testimonies');
@@ -17,7 +17,7 @@ var messagesRef = firebase.database().ref('Testimonies');
 document.getElementById('contactForm').addEventListener('submit', submitForm);
 
 // Submit form
-function submitForm(e){
+function submitForm(e) {
   e.preventDefault();
 
   // Get values
@@ -35,29 +35,28 @@ function submitForm(e){
   document.querySelector('.alert').style.display = 'block';
 
   // Hide alert after 3 seconds
-  setTimeout(function(){
+  setTimeout(function () {
     document.querySelector('.alert').style.display = 'none';
-  },15000);
+  }, 15000);
 
   // Clear form
   document.getElementById('contactForm').reset();
 }
 
 // Function to get get form values
-function getInputVal(id){
+function getInputVal(id) {
   return document.getElementById(id).value;
 }
 
 // Save message to firebase
-function saveMessage(name, location, email, phone, message, sharing){
+function saveMessage(name, location, email, phone, message, sharing) {
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
     name: name,
-    location:location,
-    email:email,
-    phone:phone,
-    message:message,
-    sharing:sharing
+    location: location,
+    email: email,
+    phone: phone,
+    message: message,
+    sharing: sharing
   })
 }
-

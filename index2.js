@@ -1,4 +1,4 @@
-firebase.auth().onAuthStateChanged(function(user) {
+firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
     // User is signed in.
 
@@ -7,7 +7,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     var user = firebase.auth().currentUser;
 
-    if(user != null){
+    if (user != null) {
 
       var email_id = user.email;
       document.getElementById("user_para").innerHTML = "Welcome User: " + email_id;
@@ -15,7 +15,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 
     }
-     
+
 
   } else {
     // No user is signed in.
@@ -26,12 +26,12 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-function login(){
+function login() {
 
   var userEmail = document.getElementById("email_field").value;
   var userPass = document.getElementById("password_field").value;
 
-  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function (error) {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
@@ -43,7 +43,7 @@ function login(){
 
 }
 
-function logout(){
+function logout() {
   firebase.auth().signOut();
 }
 
@@ -52,13 +52,11 @@ function googleLogin() {
 
   firebase.auth().signInWithPopup(provider)
 
-  .then(result => {
-    const user = result.user;
-    document.getElementById("user_div").style.display = "block";
-    document.getElementById("login_div").style.display = "none";
-  })
+    .then(result => {
+      const user = result.user;
+      document.getElementById("user_div").style.display = "block";
+      document.getElementById("login_div").style.display = "none";
+    })
 
-  .catch(console.log)
+    .catch(console.log)
 }
-
-
