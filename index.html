@@ -352,12 +352,17 @@
 
 
 
-<body style="background-color: rgb(255, 255, 255); overflow-x: hidden;">
+<body style="background-color: rgb(255, 255, 255); overflow-x: hidden;" onload="myFunction()">
   <!--Header-->
 
 
   <div id="containernew">
     <div class="head" data-role="header">
+      <div class="updates">
+        <p class="updatess">No in person mass @DivineNJ 11, 12, 13
+          Join us for the live stream healing mass & adoration | No Holy Mass Livestream on Holy Thursday, We will have
+          the Holy Thursday Vigil Prayer from 8PM-1AM(5hrs)</p>
+      </div>
       <div style="margin-top: 10px;">
         <h1 class="mainbibleverse">I am the Lord who heals you (Exodus 15:26)</h1>
       </div>
@@ -557,6 +562,9 @@
               <!--NEW EVENT FLYERS -->
               <div class="rows55">
                 <div class="columns55">
+                  <img alt="Divine mercy sunday" src="Events\DM flyer.jpg" onclick="myFunction(this);">
+                </div>
+                <div class="columns55">
                   <img alt="Divine mercy sunday" src="Events\divine mercy sunday.jpeg" onclick="myFunction(this);">
                 </div>
                 <div class="columns55">
@@ -741,6 +749,13 @@
       slides[slideIndex - 1].style.display = "block";
       setTimeout(showSlides, 5000); // Change image every 5 seconds
     }
+
+    function myFunction() {
+      alert(
+        "1) There will be no in person mass in Divine NJ on 11, 12, 13. Join us for the live stream healing mass and adoration \n\n2) Holy mass will not be live streamed on Holy Thursday Instead we will have the Holy Thursday Vigil prayer from 8 PM - 1 AM(5 hrs)"
+        );
+    }
+
   </script>
 
 </body>
