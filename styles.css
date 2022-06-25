@@ -12,7 +12,7 @@ body {
   overflow-y: hidden;
   border-radius: 250px;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.555);
+  background-color: rgba(223, 222, 222, 0.411);
   height: auto;
 
 }
@@ -699,7 +699,7 @@ body {
   padding: 0px 0px 2px 0px;
   border-radius: 250px;
   border: 3px;
-  background-color: rgba(255, 255, 255, 0.363);
+  background-color: rgba(223, 222, 222, 0.411);
   padding: 15px;
   width: 80%;
   position: relative;
@@ -714,12 +714,12 @@ body {
 
   .mainbibleverse {
     font-size: 23px;
-    padding: 0px 0px 2px 0px;
+    padding: 2px;
     border-radius: 250px;
     border: 3px;
-    background-color: rgba(255, 255, 255, 0.363);
+    background-color: rgba(223, 222, 222, 0.411);
     padding: 15px;
-    width: 90%;
+    width: 92%;
     position: relative;
     margin-bottom: -1%;
     margin-left: .5%;
@@ -856,5 +856,18 @@ a {
     border-bottom-right-radius: 8px;
     color: rgb(255, 0, 0);
     font-weight: bold;
+  }
+}
+
+.column3 p {
+  font-size: large;
+}
+
+@media screen and (max-width: 890px) {
+  .vidmain {
+    width: 100%;
+    height: auto;
+    margin-top: -1%;
+    margin-left: -1%;
   }
 }
