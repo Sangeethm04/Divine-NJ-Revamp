@@ -15,11 +15,10 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
-// function myFunctionss() {
-//    alert(
-//      "TODAY's MASS & HEALING ADORATION IS AT MANHATTAN, NEW YORK\n JOIN US LIVE ON YOUTUBE"
-//    );
-// }
+ function myFunctionss() {
+    alert(
+      "July 17 - Sunday Holy MASS - 9 a.m. - not in-person"   );
+ }
 
 function myFunction2() {
   var x = document.getElementById("myTopnav");
